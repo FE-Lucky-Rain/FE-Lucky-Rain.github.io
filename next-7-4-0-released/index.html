@@ -19,7 +19,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"www.feacat.com","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.18.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.18.0/config.min.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"www.feacat.com","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.18.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.18.0/config.min.js"></script>
 
     <meta name="description" content="💥 Breaking ChangesAdd order for theme_inject (#1136)Redesigned the sequential configuration of the multi-comment system, which was originally introduced in #1048 of New Features section below. Click">
 <meta property="og:type" content="article">
@@ -30,7 +30,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2019-09-01T02:08:13.000Z">
 <meta property="article:modified_time" content="2023-08-27T05:25:40.994Z">
-<meta property="article:author" content="FE-Cat">
+<meta property="article:author" content="FECat">
 <meta property="article:tag" content="Mesh, FEA, MBD, Simulink">
 <meta name="twitter:card" content="summary">
 
@@ -227,7 +227,7 @@
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2019-09-01 02:08:13" itemprop="dateCreated datePublished" datetime="2019-09-01T02:08:13Z">2019-09-01</time>
+      <time title="Created: 2019-09-01 10:08:13" itemprop="dateCreated datePublished" datetime="2019-09-01T10:08:13+08:00">2019-09-01</time>
     </span>
 
   
@@ -253,77 +253,77 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><h2 id="💥-Breaking-Changes"><a href="#💥-Breaking-Changes" class="headerlink" title="💥 Breaking Changes"></a>💥 Breaking Changes</h2><h3 id="Add-order-for-theme-inject-1136"><a href="#Add-order-for-theme-inject-1136" class="headerlink" title="Add order for theme_inject (#1136)"></a>Add order for theme_inject (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTEzNg==">#1136<i class="fa fa-external-link-alt"></i></span>)</h3><p>Redesigned the sequential configuration of the multi-comment system, which was originally introduced in #1048 of <code>New Features</code> section below.</p>
+    <div class="post-body" itemprop="articleBody"><h2 id="💥-Breaking-Changes"><a href="#💥-Breaking-Changes" class="headerlink" title="💥 Breaking Changes"></a>💥 Breaking Changes</h2><h3 id="Add-order-for-theme-inject-1136"><a href="#Add-order-for-theme-inject-1136" class="headerlink" title="Add order for theme_inject (#1136)"></a>Add order for theme_inject (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1136">#1136</a>)</h3><p>Redesigned the sequential configuration of the multi-comment system, which was originally introduced in #1048 of <code>New Features</code> section below.</p>
 <details><summary>Click to see configuration's changes</summary><p>
 
 <figure class="highlight diff"><table><tr><td class="code"><pre><span class="line"># Multiple Comment System Support</span><br><span class="line">comments:</span><br><span class="line">  # Available values: tabs | buttons</span><br><span class="line">  style: tabs</span><br><span class="line">  # Choose a comment system to be displayed by default.</span><br><span class="line">  # Available values: changyan | disqus | disqusjs | facebook_comments_plugin | gitalk | livere | valine | vkontakte</span><br><span class="line">  active:</span><br><span class="line">  # Setting `true` means remembering the comment system selected by the visitor.</span><br><span class="line">  storage: true</span><br><span class="line">  # Modify texts or order for any naves, here are some examples.</span><br><span class="line">  nav:</span><br><span class="line"><span class="deletion">-    #disqus: disqus</span></span><br><span class="line"><span class="deletion">-    #facebook_comments_plugin: &lt;i class=&quot;fa fa-facebook-official&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; facebook</span></span><br><span class="line"><span class="deletion">-    #gitalk: Load Gitalk</span></span><br><span class="line"><span class="addition">+    #disqus:</span></span><br><span class="line"><span class="addition">+    #  text: Load Disqus</span></span><br><span class="line"><span class="addition">+    #  order: -1</span></span><br><span class="line"><span class="addition">+    #facebook_comments_plugin:</span></span><br><span class="line"><span class="addition">+    #  text: &lt;i class=&quot;fa fa-facebook-official&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; facebook</span></span><br><span class="line"><span class="addition">+    #gitalk:</span></span><br></pre></td></tr></table></figure>
 
 </p></details>
 
-<h3 id="Extract-all-share-systems-to-plugins-1104"><a href="#Extract-all-share-systems-to-plugins-1104" class="headerlink" title="Extract all share systems to plugins (#1104)"></a>Extract all share systems to plugins (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTEwNA==">#1104<i class="fa fa-external-link-alt"></i></span>)</h3><blockquote>
-<p>See the <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTEwNC9maWxlcz9maWxlLWZpbHRlcnMlNUIlNUQ9LnltbCNkaWZmLWFlYjQyMjgzYWY4ZWY4ZTlkYTQwZWRlZGQzYWUyYWIy">diff<i class="fa fa-external-link-alt"></i></span> (mostly deletion) of <code>_config.yml</code></p>
+<h3 id="Extract-all-share-systems-to-plugins-1104"><a href="#Extract-all-share-systems-to-plugins-1104" class="headerlink" title="Extract all share systems to plugins (#1104)"></a>Extract all share systems to plugins (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1104">#1104</a>)</h3><blockquote>
+<p>See the <a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1104/files?file-filters%5B%5D=.yml#diff-aeb42283af8ef8e9da40ededd3ae2ab2">diff</a> (mostly deletion) of <code>_config.yml</code></p>
 </blockquote>
-<p>Now share systems come with plugin <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by1uZXh0LXNoYXJl" title="theme-next/hexo-next-share: Content sharing services for NexT.">hexo-next-share<i class="fa fa-external-link-alt"></i></span>.</p>
+<p>Now share systems come with plugin <a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-next-share" title="theme-next/hexo-next-share: Content sharing services for NexT.">hexo-next-share</a>.</p>
 <p>Latest docs can be found at <a href="/docs/third-party-services/post-widgets.html" title="Post Widgets | NexT">Post Widgets</a> and <a href="/docs/third-party-services/statistics-and-analytics.html" title="Statistics and Analytics | NexT">Statistics and Analytics</a>.</p>
-<h3 id="Refactor-vendors-1081"><a href="#Refactor-vendors-1081" class="headerlink" title="Refactor vendors (#1081)"></a>Refactor vendors (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTA4MQ==">#1081<i class="fa fa-external-link-alt"></i></span>)</h3><details><summary>Click to see configuration's changes</summary><p>
+<h3 id="Refactor-vendors-1081"><a href="#Refactor-vendors-1081" class="headerlink" title="Refactor vendors (#1081)"></a>Refactor vendors (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1081">#1081</a>)</h3><details><summary>Click to see configuration's changes</summary><p>
 
 <figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">math:</span><br><span class="line"><span class="deletion">-  engine: mathjax</span></span><br><span class="line"><span class="deletion">-  #engine: katex</span></span><br><span class="line">  mathjax:</span><br><span class="line"><span class="deletion">-    cdn: //cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML</span></span><br><span class="line"><span class="deletion">-    #cdn: //cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML</span></span><br><span class="line"><span class="addition">+    enable: false</span></span><br><span class="line"><span class="deletion">-    #mhchem: //cdn.jsdelivr.net/npm/mathjax-mhchem@3</span></span><br><span class="line"><span class="deletion">-    #mhchem: //cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0</span></span><br><span class="line"><span class="addition">+    mhchem: false</span></span><br><span class="line">  katex:</span><br><span class="line"><span class="deletion">-    cdn: //cdn.jsdelivr.net/npm/katex@0/dist/katex.min.css</span></span><br><span class="line"><span class="deletion">-    #cdn: //cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css</span></span><br><span class="line"><span class="addition">+    enable: false</span></span><br><span class="line"><span class="deletion">-    copy_tex:</span></span><br><span class="line"><span class="deletion">-      enable: false</span></span><br><span class="line"><span class="deletion">-      copy_tex_js: //cdn.jsdelivr.net/npm/katex@0/dist/contrib/copy-tex.min.js</span></span><br><span class="line"><span class="deletion">-      copy_tex_css: //cdn.jsdelivr.net/npm/katex@0/dist/contrib/copy-tex.min.css</span></span><br><span class="line"><span class="addition">+    copy_tex: false</span></span><br><span class="line"></span><br><span class="line">pdf:</span><br><span class="line"><span class="deletion">-  pdfobject:</span></span><br><span class="line"><span class="deletion">-    cdn: //cdn.jsdelivr.net/npm/pdfobject@2/pdfobject.min.js</span></span><br><span class="line"><span class="deletion">-    #cdn: //cdnjs.cloudflare.com/ajax/libs/pdfobject/2.1.1/pdfobject.min.js</span></span><br><span class="line"></span><br><span class="line">mermaid:</span><br><span class="line"><span class="deletion">-  cdn: //cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js</span></span><br><span class="line"><span class="deletion">-  #cdn: //cdnjs.cloudflare.com/ajax/libs/mermaid/8.0.0/mermaid.min.js</span></span><br><span class="line"></span><br><span class="line">vendors:</span><br><span class="line"><span class="addition">+  mathjax:</span></span><br><span class="line"><span class="addition">+  mhchem:</span></span><br><span class="line"><span class="addition">+  katex:</span></span><br><span class="line"><span class="addition">+  copy_tex_js:</span></span><br><span class="line"><span class="addition">+  copy_tex_css:</span></span><br><span class="line"><span class="addition">+  pdfobject:</span></span><br><span class="line"><span class="addition">+  mermaid:</span></span><br></pre></td></tr></table></figure>
 
 </p></details>
 
-<h3 id="Remove-full-image-tag-1053"><a href="#Remove-full-image-tag-1053" class="headerlink" title="Remove full-image tag (#1053)"></a>Remove full-image tag (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTA1Mw==">#1053<i class="fa fa-external-link-alt"></i></span>)</h3><h2 id="🌟-New-Features"><a href="#🌟-New-Features" class="headerlink" title="🌟 New Features"></a>🌟 New Features</h2><ul>
-<li>Add multi-comments (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTA0OA==">#1048<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>PJAX support (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTAyNA==">#1024<i class="fa fa-external-link-alt"></i></span>)</li>
+<h3 id="Remove-full-image-tag-1053"><a href="#Remove-full-image-tag-1053" class="headerlink" title="Remove full-image tag (#1053)"></a>Remove full-image tag (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1053">#1053</a>)</h3><h2 id="🌟-New-Features"><a href="#🌟-New-Features" class="headerlink" title="🌟 New Features"></a>🌟 New Features</h2><ul>
+<li>Add multi-comments (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1048">#1048</a>)</li>
+<li>PJAX support (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1024">#1024</a>)</li>
 </ul>
 <h2 id="⭐-Features"><a href="#⭐-Features" class="headerlink" title="⭐ Features"></a>⭐ Features</h2><ul>
-<li>Expand beian options for users in mainland China (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTEyMQ==">#1121<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Add color option for bookmark (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTExMg==">#1112<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Extract bookmark &#x2F; save_scroll to plugins (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTEwNg==">#1106<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Refactor reading-progress (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTEwMA==">#1100<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Remove post type quote &amp; picture (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTA5OQ==">#1099<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Show year devision in category or tag page (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTA2MQ==">#1061<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Expand beian options for users in mainland China (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1121">#1121</a>)</li>
+<li>Add color option for bookmark (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1112">#1112</a>)</li>
+<li>Extract bookmark &#x2F; save_scroll to plugins (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1106">#1106</a>)</li>
+<li>Refactor reading-progress (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1100">#1100</a>)</li>
+<li>Remove post type quote &amp; picture (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1099">#1099</a>)</li>
+<li>Show year devision in category or tag page (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1061">#1061</a>)</li>
 </ul>
 <h2 id="🛠-Improvements"><a href="#🛠-Improvements" class="headerlink" title="🛠 Improvements"></a>🛠 Improvements</h2><ul>
-<li>Refactor sidebar motion (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTEyOA==">#1128<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Reimplement Bootstrap Affix (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTEzMA==">#1130<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Make CSS selectors and dimensional calculations more robust (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTEyNA==">#1124<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Refactor links-of-blogroll-item (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTExOQ==">#1119<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Make sidebar toc &amp; PJAX loading faster (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTExMw==">#1113<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>New helper next-vendors (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTEwNQ==">#1105<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Add next_inject helper (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTA5OA==">#1098<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Add next_js helper (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTA5Ng==">#1096<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Refactor auto excerpt (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTA4MA==">#1080<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fix several bugs reported in v7.3 (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTA2MA==">#1060<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Optimize the loading of exturl (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTA3Ng==">#1076<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Optimize the rendering of post (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTA3NQ==">#1075<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Improve the style of firebase analytics and post-meta (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTA1Ng==">#1056<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Need more cache 2 (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTA1MQ==">#1051<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Refactor custom pages (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTA0NQ==">#1045<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Reorganize the structure of <code>generateBefore</code> (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTA0Mw==">#1043<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Obey Stylint rules (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTAzNw==">#1037<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Arrow function expression (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTAwMw==">#1003<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Refactor lint &#x2F; tests &#x2F; bower (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTA0MQ==">#1041<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Refactor sidebar motion (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1128">#1128</a>)</li>
+<li>Reimplement Bootstrap Affix (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1130">#1130</a>)</li>
+<li>Make CSS selectors and dimensional calculations more robust (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1124">#1124</a>)</li>
+<li>Refactor links-of-blogroll-item (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1119">#1119</a>)</li>
+<li>Make sidebar toc &amp; PJAX loading faster (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1113">#1113</a>)</li>
+<li>New helper next-vendors (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1105">#1105</a>)</li>
+<li>Add next_inject helper (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1098">#1098</a>)</li>
+<li>Add next_js helper (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1096">#1096</a>)</li>
+<li>Refactor auto excerpt (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1080">#1080</a>)</li>
+<li>Fix several bugs reported in v7.3 (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1060">#1060</a>)</li>
+<li>Optimize the loading of exturl (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1076">#1076</a>)</li>
+<li>Optimize the rendering of post (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1075">#1075</a>)</li>
+<li>Improve the style of firebase analytics and post-meta (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1056">#1056</a>)</li>
+<li>Need more cache 2 (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1051">#1051</a>)</li>
+<li>Refactor custom pages (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1045">#1045</a>)</li>
+<li>Reorganize the structure of <code>generateBefore</code> (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1043">#1043</a>)</li>
+<li>Obey Stylint rules (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1037">#1037</a>)</li>
+<li>Arrow function expression (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1003">#1003</a>)</li>
+<li>Refactor lint &#x2F; tests &#x2F; bower (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1041">#1041</a>)</li>
 </ul>
 <h2 id="🐞-Bug-Fixes"><a href="#🐞-Bug-Fixes" class="headerlink" title="🐞 Bug Fixes"></a>🐞 Bug Fixes</h2><ul>
-<li>IntersectionObserver about TOC (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTEyNQ==">#1125<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fix PJAX refresh bugs when search &#x2F; fancybox enabled (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTExMQ==">#1111<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fix space after comment count (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTEwMQ==">#1101<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Use insertAdjacentHTML instead of appendChild (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTEwMg==">#1102<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fix leancloud counter bug (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTA5Mw==">#1093<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Strange bug with symlinked <code>next</code> dir (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTA2Mg==">#1062<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fix issues caused by PJAX (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTA1Nw==">#1057<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fix codeblock diff highlight bug (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTA0Nw==">#1047<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Refactor inject style path (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTA0NA==">#1044<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fix bugs caused by <code>this</code> and optimize the loading of cheerio (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTA0Mg==">#1042<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fix affix bug (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTAzOQ==">#1039<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>IntersectionObserver about TOC (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1125">#1125</a>)</li>
+<li>Fix PJAX refresh bugs when search &#x2F; fancybox enabled (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1111">#1111</a>)</li>
+<li>Fix space after comment count (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1101">#1101</a>)</li>
+<li>Use insertAdjacentHTML instead of appendChild (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1102">#1102</a>)</li>
+<li>Fix leancloud counter bug (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1093">#1093</a>)</li>
+<li>Strange bug with symlinked <code>next</code> dir (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1062">#1062</a>)</li>
+<li>Fix issues caused by PJAX (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1057">#1057</a>)</li>
+<li>Fix codeblock diff highlight bug (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1047">#1047</a>)</li>
+<li>Refactor inject style path (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1044">#1044</a>)</li>
+<li>Fix bugs caused by <code>this</code> and optimize the loading of cheerio (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1042">#1042</a>)</li>
+<li>Fix affix bug (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1039">#1039</a>)</li>
 </ul>
 <h2 id="🌍-Localization"><a href="#🌍-Localization" class="headerlink" title="🌍 Localization"></a>🌍 Localization</h2><ul>
-<li>New Crowdin translations (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTExNw==">#1117<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Removed <code>comments_count</code> (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTA3OQ==">#1079<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>New Crowdin translations (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1117">#1117</a>)</li>
+<li>Removed <code>comments_count</code> (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1079">#1079</a>)</li>
 </ul>
 <hr>
-<p>For full changes, see the <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L2NvbXBhcmUvdjcuMy4wLi4udjcuNC4w">comparison between v7.3.0 and v7.4.0<i class="fa fa-external-link-alt"></i></span></p>
-<p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3JlbGVhc2VzL3RhZy92Ny40LjA=">Detailed changes for NexT v7.4.0<i class="fa fa-external-link-alt"></i></span></p>
+<p>For full changes, see the <a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/compare/v7.3.0...v7.4.0">comparison between v7.3.0 and v7.4.0</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/releases/tag/v7.4.0">Detailed changes for NexT v7.4.0</a></p>
 
     </div>
 
@@ -375,7 +375,7 @@
     </span>
     <span class="author" itemprop="copyrightHolder">FE-Cat</span>
   </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a>
   </div><div class="footer-custom">
 Website source code <span class="exturl theme-link" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG8tbmV4dC9oZXhvLW5leHQuZ2l0aHViLmlv">here</span>
 </div>

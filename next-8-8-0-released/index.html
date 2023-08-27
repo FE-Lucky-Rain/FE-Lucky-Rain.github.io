@@ -19,7 +19,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"www.feacat.com","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.18.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.18.0/config.min.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"www.feacat.com","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.18.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.18.0/config.min.js"></script>
 
     <meta name="description" content="⭐ Features Dark mode support for theme_color (#378)-# Android Chrome header panel color ($brand-bg &#x2F; $headband-bg &#x3D;&gt; $black-deep).-android_chrome_color: #222+# Browser header panel color.+theme_col">
 <meta property="og:type" content="article">
@@ -30,7 +30,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-10-01T03:52:46.000Z">
 <meta property="article:modified_time" content="2023-08-27T05:25:41.013Z">
-<meta property="article:author" content="FE-Cat">
+<meta property="article:author" content="FECat">
 <meta property="article:tag" content="Mesh, FEA, MBD, Simulink">
 <meta name="twitter:card" content="summary">
 
@@ -227,7 +227,7 @@
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2021-10-01 03:52:46" itemprop="dateCreated datePublished" datetime="2021-10-01T03:52:46Z">2021-10-01</time>
+      <time title="Created: 2021-10-01 11:52:46" itemprop="dateCreated datePublished" datetime="2021-10-01T11:52:46+08:00">2021-10-01</time>
     </span>
 
   
@@ -254,30 +254,30 @@
     
     
     <div class="post-body" itemprop="articleBody"><h2 id="⭐-Features"><a href="#⭐-Features" class="headerlink" title="⭐ Features"></a>⭐ Features</h2><ul>
-<li>Dark mode support for theme_color (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3B1bGwvMzc4">#378<i class="fa fa-external-link-alt"></i></span>)<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line"><span class="deletion">-# Android Chrome header panel color ($brand-bg / $headband-bg =&gt; $black-deep).</span></span><br><span class="line"><span class="deletion">-android_chrome_color: #222</span></span><br><span class="line"><span class="addition">+# Browser header panel color.</span></span><br><span class="line"><span class="addition">+theme_color:</span></span><br><span class="line"><span class="addition">+  light: #222</span></span><br><span class="line"><span class="addition">+  dark: #222</span></span><br></pre></td></tr></table></figure></li>
-<li>Make the nav bar of tabs with long content stick to the top (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3B1bGwvMzYx">#361<i class="fa fa-external-link-alt"></i></span>)<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">tabs:</span><br><span class="line"><span class="addition">+  # Make the nav bar of tabs with long content stick to the top.</span></span><br><span class="line"><span class="addition">+  sticky: false</span></span><br></pre></td></tr></table></figure></li>
-<li>Fix darkmode mermaid theme (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC9kZWJiZTViZGM5YjUyM2I4NDA3MWMwZTQyMTIxMGIwYzYyMGIzZDY1">debbe5b<i class="fa fa-external-link-alt"></i></span>)<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">mermaid:</span><br><span class="line"><span class="deletion">-  theme: forest</span></span><br><span class="line"><span class="addition">+  theme:</span></span><br><span class="line"><span class="addition">+    light: default</span></span><br><span class="line"><span class="addition">+    dark: dark</span></span><br></pre></td></tr></table></figure></li>
-<li>Add an option to disable banner (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC85YTMxM2IyM2MzOGM1NDVkNmIyOWNhN2Y3ODA1ZDBiODg1Nzg2NGZk">9a313b2<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Dark mode support for theme_color (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/pull/378">#378</a>)<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line"><span class="deletion">-# Android Chrome header panel color ($brand-bg / $headband-bg =&gt; $black-deep).</span></span><br><span class="line"><span class="deletion">-android_chrome_color: #222</span></span><br><span class="line"><span class="addition">+# Browser header panel color.</span></span><br><span class="line"><span class="addition">+theme_color:</span></span><br><span class="line"><span class="addition">+  light: #222</span></span><br><span class="line"><span class="addition">+  dark: #222</span></span><br></pre></td></tr></table></figure></li>
+<li>Make the nav bar of tabs with long content stick to the top (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/pull/361">#361</a>)<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">tabs:</span><br><span class="line"><span class="addition">+  # Make the nav bar of tabs with long content stick to the top.</span></span><br><span class="line"><span class="addition">+  sticky: false</span></span><br></pre></td></tr></table></figure></li>
+<li>Fix darkmode mermaid theme (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/commit/debbe5bdc9b523b84071c0e421210b0c620b3d65">debbe5b</a>)<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">mermaid:</span><br><span class="line"><span class="deletion">-  theme: forest</span></span><br><span class="line"><span class="addition">+  theme:</span></span><br><span class="line"><span class="addition">+    light: default</span></span><br><span class="line"><span class="addition">+    dark: dark</span></span><br></pre></td></tr></table></figure></li>
+<li>Add an option to disable banner (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/commit/9a313b23c38c545d6b29ca7f7805d0b8857864fd">9a313b2</a>)</li>
 </ul>
 <h2 id="🐞-Bug-Fixes"><a href="#🐞-Bug-Fixes" class="headerlink" title="🐞 Bug Fixes"></a>🐞 Bug Fixes</h2><ul>
-<li>Execute unescapeHTML before encoding exturl (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC9kMWJmMTAxY2MxMDFiZmY0M2E1MzZkZjkyNmJiNjZiNTQ5OTAyY2Iw">d1bf101<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Do not restart Pace on every pushState event (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC8wMDA1YzAzNjdmNTY5NWM5NzYyZjRkNjM2MTE5ODllMzgzMGNmMjQ3">0005c03<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fix calendar (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC81M2U1NDBiYzNiN2YyNjAxY2Y5YWJlYjA4NmYyMTRlMTE5ZTU4MDk5">53e540b<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Execute unescapeHTML before encoding exturl (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/commit/d1bf101cc101bff43a536df926bb66b549902cb0">d1bf101</a>)</li>
+<li>Do not restart Pace on every pushState event (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/commit/0005c0367f5695c9762f4d63611989e3830cf247">0005c03</a>)</li>
+<li>Fix calendar (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/commit/53e540bc3b7f2601cf9abeb086f214e119e58099">53e540b</a>)</li>
 </ul>
 <h2 id="🛠-Improvements"><a href="#🛠-Improvements" class="headerlink" title="🛠 Improvements"></a>🛠 Improvements</h2><ul>
-<li>Move local-search.js to hexo-generator-searchdb (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3B1bGwvMzY5">#369<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Calculate <code>--sidebar-wrapper-height</code> in pure CSS (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3B1bGwvMzYw">#360<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Move local-search.js to hexo-generator-searchdb (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/pull/369">#369</a>)</li>
+<li>Calculate <code>--sidebar-wrapper-height</code> in pure CSS (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/pull/360">#360</a>)</li>
 </ul>
 <h2 id="🌀-External-Changes"><a href="#🌀-External-Changes" class="headerlink" title="🌀 External Changes"></a>🌀 External Changes</h2><ul>
-<li>Update dessant&#x2F;lock-threads action to v3 (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3B1bGwvMzgw">#380<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Update dependency mocha to v9.1.2 (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3B1bGwvMzc5">#379<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Update dessant&#x2F;lock-threads action to v3 (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/pull/380">#380</a>)</li>
+<li>Update dependency mocha to v9.1.2 (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/pull/379">#379</a>)</li>
 </ul>
 <h2 id="📖-Documentation"><a href="#📖-Documentation" class="headerlink" title="📖 Documentation"></a>📖 Documentation</h2><ul>
-<li>Typo fix (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3B1bGwvMzgx">#381<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Typo fix (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/pull/381">#381</a>)</li>
 </ul>
 <hr>
-<p>For full changes, see the <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbXBhcmUvdjguNy4xLi4udjguOC4w">comparison between v8.7.1 and v8.8.0<i class="fa fa-external-link-alt"></i></span></p>
-<p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3JlbGVhc2VzL3RhZy92OC44LjA=">Detailed changes for NexT v8.8.0<i class="fa fa-external-link-alt"></i></span></p>
+<p>For full changes, see the <a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/compare/v8.7.1...v8.8.0">comparison between v8.7.1 and v8.8.0</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/releases/tag/v8.8.0">Detailed changes for NexT v8.8.0</a></p>
 
     </div>
 
@@ -329,7 +329,7 @@
     </span>
     <span class="author" itemprop="copyrightHolder">FE-Cat</span>
   </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a>
   </div><div class="footer-custom">
 Website source code <span class="exturl theme-link" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG8tbmV4dC9oZXhvLW5leHQuZ2l0aHViLmlv">here</span>
 </div>

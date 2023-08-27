@@ -19,7 +19,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"www.feacat.com","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.18.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.18.0/config.min.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"www.feacat.com","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.18.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.18.0/config.min.js"></script>
 
     <meta name="description" content="Breaking ChangesAdd options for canvas-nest (#441)Old configuration:-canvas_nest: false New configuration:canvas_nest:  enable: false  onmobile: true # display on mobile or not  color: &amp;#x27;0,0,255&amp;#">
 <meta property="og:type" content="article">
@@ -30,7 +30,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2018-11-01T02:25:05.000Z">
 <meta property="article:modified_time" content="2023-08-27T05:25:40.990Z">
-<meta property="article:author" content="FE-Cat">
+<meta property="article:author" content="FECat">
 <meta property="article:tag" content="Mesh, FEA, MBD, Simulink">
 <meta name="twitter:card" content="summary">
 
@@ -227,7 +227,7 @@
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2018-11-01 02:25:05" itemprop="dateCreated datePublished" datetime="2018-11-01T02:25:05Z">2018-11-01</time>
+      <time title="Created: 2018-11-01 10:25:05" itemprop="dateCreated datePublished" datetime="2018-11-01T10:25:05+08:00">2018-11-01</time>
     </span>
 
   
@@ -253,25 +253,25 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><h2 id="Breaking-Changes"><a href="#Breaking-Changes" class="headerlink" title="Breaking Changes"></a>Breaking Changes</h2><h3 id="Add-options-for-canvas-nest-441"><a href="#Add-options-for-canvas-nest-441" class="headerlink" title="Add options for canvas-nest (#441)"></a>Add options for canvas-nest (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNDQx">#441<i class="fa fa-external-link-alt"></i></span>)</h3><h4 id="Old-configuration"><a href="#Old-configuration" class="headerlink" title="Old configuration:"></a>Old configuration:</h4><figure class="highlight diff"><table><tr><td class="code"><pre><span class="line"><span class="deletion">-canvas_nest: false</span></span><br></pre></td></tr></table></figure>
+    <div class="post-body" itemprop="articleBody"><h2 id="Breaking-Changes"><a href="#Breaking-Changes" class="headerlink" title="Breaking Changes"></a>Breaking Changes</h2><h3 id="Add-options-for-canvas-nest-441"><a href="#Add-options-for-canvas-nest-441" class="headerlink" title="Add options for canvas-nest (#441)"></a>Add options for canvas-nest (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/441">#441</a>)</h3><h4 id="Old-configuration"><a href="#Old-configuration" class="headerlink" title="Old configuration:"></a>Old configuration:</h4><figure class="highlight diff"><table><tr><td class="code"><pre><span class="line"><span class="deletion">-canvas_nest: false</span></span><br></pre></td></tr></table></figure>
 <h4 id="New-configuration"><a href="#New-configuration" class="headerlink" title="New configuration:"></a>New configuration:</h4><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">canvas_nest:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">onmobile:</span> <span class="literal">true</span> <span class="comment"># display on mobile or not</span></span><br><span class="line">  <span class="attr">color:</span> <span class="string">&#x27;0,0,255&#x27;</span> <span class="comment"># RGB values, use &#x27;,&#x27; to separate</span></span><br><span class="line">  <span class="attr">opacity:</span> <span class="number">0.5</span> <span class="comment"># the opacity of line: 0~1</span></span><br><span class="line">  <span class="attr">zIndex:</span> <span class="number">-1</span> <span class="comment"># z-index property of the background</span></span><br><span class="line">  <span class="attr">count:</span> <span class="number">99</span> <span class="comment"># the number of lines</span></span><br></pre></td></tr></table></figure>
 
 <h2 id="Features"><a href="#Features" class="headerlink" title="Features"></a>Features</h2><ul>
-<li>Feat: Add sina weibo option to social block in sidebar settings (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNDU2">#456<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Add beian option at footer for Chinese website owner (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNDM4">#438<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Add growingio analytics (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMzU0">#354<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Add enable option for <code>read_more_btn</code> (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNDQ2">#446<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Feat: Add sina weibo option to social block in sidebar settings (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/456">#456</a>)</li>
+<li>Add beian option at footer for Chinese website owner (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/438">#438</a>)</li>
+<li>Add growingio analytics (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/354">#354</a>)</li>
+<li>Add enable option for <code>read_more_btn</code> (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/446">#446</a>)</li>
 </ul>
 <h2 id="Bug-Fixes"><a href="#Bug-Fixes" class="headerlink" title="Bug Fixes"></a>Bug Fixes</h2><ul>
-<li>Fix bugs turn on the future of google calendar (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNDA3">#407<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Delete Bootcss settings and docs (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNDM5">#439<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fixes for <code>b2t</code> &amp; variables refactoring. (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNDM0">#434<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fix for <code>offset</code> option. [2] (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNDMz">#433<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fixed resize filter &amp; affix &amp; back to top for sidebar (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNDMx">#431<i class="fa fa-external-link-alt"></i></span>, <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNDMy">#432<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Fix bugs turn on the future of google calendar (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/407">#407</a>)</li>
+<li>Delete Bootcss settings and docs (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/439">#439</a>)</li>
+<li>Fixes for <code>b2t</code> &amp; variables refactoring. (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/434">#434</a>)</li>
+<li>Fix for <code>offset</code> option. [2] (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/433">#433</a>)</li>
+<li>Fixed resize filter &amp; affix &amp; back to top for sidebar (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/431">#431</a>, <a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/432">#432</a>)</li>
 </ul>
 <hr>
-<p>For full changes, see the <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L2NvbXBhcmUvdjYuNC4yLi4udjYuNS4w">comparison between 6.4.2 and 6.5.0<i class="fa fa-external-link-alt"></i></span></p>
-<p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3JlbGVhc2VzL3RhZy92Ni41LjA=">Detailed changes for NexT v6.5.0<i class="fa fa-external-link-alt"></i></span></p>
+<p>For full changes, see the <a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/compare/v6.4.2...v6.5.0">comparison between 6.4.2 and 6.5.0</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/releases/tag/v6.5.0">Detailed changes for NexT v6.5.0</a></p>
 
     </div>
 
@@ -323,7 +323,7 @@
     </span>
     <span class="author" itemprop="copyrightHolder">FE-Cat</span>
   </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a>
   </div><div class="footer-custom">
 Website source code <span class="exturl theme-link" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG8tbmV4dC9oZXhvLW5leHQuZ2l0aHViLmlv">here</span>
 </div>

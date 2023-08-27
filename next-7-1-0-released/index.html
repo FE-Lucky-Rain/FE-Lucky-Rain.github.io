@@ -19,7 +19,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"www.feacat.com","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.18.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.18.0/config.min.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"www.feacat.com","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.18.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.18.0/config.min.js"></script>
 
     <meta name="description" content="Happy April Fools&#39; Day Guys \(^_^)&#x2F;  💥 Breaking ChangesUsage of quicklink (#642) Now quicklink will load on demand by default. Add quicklink: true in Front-matter for those pages or posts y">
 <meta property="og:type" content="article">
@@ -30,7 +30,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2019-04-01T11:19:46.000Z">
 <meta property="article:modified_time" content="2023-08-27T05:25:40.992Z">
-<meta property="article:author" content="FE-Cat">
+<meta property="article:author" content="FECat">
 <meta property="article:tag" content="Mesh, FEA, MBD, Simulink">
 <meta name="twitter:card" content="summary">
 
@@ -227,7 +227,7 @@
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2019-04-01 11:19:46" itemprop="dateCreated datePublished" datetime="2019-04-01T11:19:46Z">2019-04-01</time>
+      <time title="Created: 2019-04-01 19:19:46" itemprop="dateCreated datePublished" datetime="2019-04-01T19:19:46+08:00">2019-04-01</time>
     </span>
 
   
@@ -256,100 +256,100 @@
     <div class="post-body" itemprop="articleBody"><blockquote>
 <p>Happy April Fools&#39; Day Guys \(^_^)&#x2F;</p>
 </blockquote>
-<h2 id="💥-Breaking-Changes"><a href="#💥-Breaking-Changes" class="headerlink" title="💥 Breaking Changes"></a>💥 Breaking Changes</h2><h3 id="Usage-of-quicklink-642"><a href="#Usage-of-quicklink-642" class="headerlink" title="Usage of quicklink (#642)"></a>Usage of <code>quicklink</code> (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjQy">#642<i class="fa fa-external-link-alt"></i></span>)</h3><ul>
+<h2 id="💥-Breaking-Changes"><a href="#💥-Breaking-Changes" class="headerlink" title="💥 Breaking Changes"></a>💥 Breaking Changes</h2><h3 id="Usage-of-quicklink-642"><a href="#Usage-of-quicklink-642" class="headerlink" title="Usage of quicklink (#642)"></a>Usage of <code>quicklink</code> (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/642">#642</a>)</h3><ul>
 <li>Now quicklink will load on demand by default.</li>
 <li>Add <code>quicklink: true</code> in Front-matter for those pages or posts you want.</li>
 <li>Home page and archive page can be controlled through <code>home</code> and <code>archive</code> option.</li>
 </ul>
 <figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">quicklink:</span><br><span class="line">  enable: true</span><br><span class="line"><span class="deletion">- per_page: true</span></span><br><span class="line"><span class="addition">+ home: true # enable or disable quicklink on home page</span></span><br><span class="line"><span class="addition">+ archive: true # enable or disable quicklink on archive page</span></span><br><span class="line"># Add `quicklink: true` in Front-matter to enable quicklink on special page or post</span><br></pre></td></tr></table></figure>
-<h3 id="Some-options-look-more-uniform-in-config-yml-643"><a href="#Some-options-look-more-uniform-in-config-yml-643" class="headerlink" title="Some options look more uniform in _config.yml (#643)"></a>Some options look more uniform in <code>_config.yml</code> (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjQz">#643<i class="fa fa-external-link-alt"></i></span>)</h3><figure class="highlight diff"><table><tr><td class="code"><pre><span class="line"><span class="deletion">- #github_banner: https://github.com/yourname || Follow me on GitHub</span></span><br><span class="line"><span class="addition">+ github_banner:</span></span><br><span class="line"><span class="addition">+  enable: false</span></span><br><span class="line"><span class="addition">+  permalink: https://github.com/yourname</span></span><br><span class="line"><span class="addition">+  title: Follow me on GitHub</span></span><br><span class="line"></span><br><span class="line">post_meta:</span><br><span class="line">  updated_at:</span><br><span class="line"><span class="deletion">-    enabled: true</span></span><br><span class="line"><span class="addition">+    enable: true</span></span><br><span class="line"></span><br><span class="line">wechat_subscriber:</span><br><span class="line"><span class="deletion">-  #enabled: true</span></span><br><span class="line"><span class="addition">+  enable: false</span></span><br><span class="line"></span><br><span class="line">custom_logo:</span><br><span class="line"><span class="deletion">-  enabled: false</span></span><br><span class="line"><span class="addition">+  enable: false</span></span><br><span class="line"></span><br><span class="line"><span class="deletion">-cheers_enabled: true</span></span><br><span class="line"><span class="addition">+cheers: true</span></span><br></pre></td></tr></table></figure>
+<h3 id="Some-options-look-more-uniform-in-config-yml-643"><a href="#Some-options-look-more-uniform-in-config-yml-643" class="headerlink" title="Some options look more uniform in _config.yml (#643)"></a>Some options look more uniform in <code>_config.yml</code> (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/643">#643</a>)</h3><figure class="highlight diff"><table><tr><td class="code"><pre><span class="line"><span class="deletion">- #github_banner: https://github.com/yourname || Follow me on GitHub</span></span><br><span class="line"><span class="addition">+ github_banner:</span></span><br><span class="line"><span class="addition">+  enable: false</span></span><br><span class="line"><span class="addition">+  permalink: https://github.com/yourname</span></span><br><span class="line"><span class="addition">+  title: Follow me on GitHub</span></span><br><span class="line"></span><br><span class="line">post_meta:</span><br><span class="line">  updated_at:</span><br><span class="line"><span class="deletion">-    enabled: true</span></span><br><span class="line"><span class="addition">+    enable: true</span></span><br><span class="line"></span><br><span class="line">wechat_subscriber:</span><br><span class="line"><span class="deletion">-  #enabled: true</span></span><br><span class="line"><span class="addition">+  enable: false</span></span><br><span class="line"></span><br><span class="line">custom_logo:</span><br><span class="line"><span class="deletion">-  enabled: false</span></span><br><span class="line"><span class="addition">+  enable: false</span></span><br><span class="line"></span><br><span class="line"><span class="deletion">-cheers_enabled: true</span></span><br><span class="line"><span class="addition">+cheers: true</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="Usage-of-back2top-button-657"><a href="#Usage-of-back2top-button-657" class="headerlink" title="Usage of back2top button (#657)"></a>Usage of <code>back2top</code> button (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjU3">#657<i class="fa fa-external-link-alt"></i></span>)</h3><figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">sidebar:</span><br><span class="line"><span class="deletion">-  # Back to top in sidebar.</span></span><br><span class="line"><span class="deletion">-  b2t: false</span></span><br><span class="line"><span class="deletion">-  # Scroll percent label in b2t button.</span></span><br><span class="line"><span class="deletion">-  scrollpercent: false</span></span><br></pre></td></tr></table></figure>
+<h3 id="Usage-of-back2top-button-657"><a href="#Usage-of-back2top-button-657" class="headerlink" title="Usage of back2top button (#657)"></a>Usage of <code>back2top</code> button (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/657">#657</a>)</h3><figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">sidebar:</span><br><span class="line"><span class="deletion">-  # Back to top in sidebar.</span></span><br><span class="line"><span class="deletion">-  b2t: false</span></span><br><span class="line"><span class="deletion">-  # Scroll percent label in b2t button.</span></span><br><span class="line"><span class="deletion">-  scrollpercent: false</span></span><br></pre></td></tr></table></figure>
 
 <figure class="highlight diff"><table><tr><td class="code"><pre><span class="line"><span class="addition">+back2top:</span></span><br><span class="line"><span class="addition">+  enable: true</span></span><br><span class="line"><span class="addition">+  # Back to top in sidebar.</span></span><br><span class="line"><span class="addition">+  sidebar: false</span></span><br><span class="line"><span class="addition">+  # Scroll percent label in b2t button.</span></span><br><span class="line"><span class="addition">+  scrollpercent: false</span></span><br></pre></td></tr></table></figure>
 
 <h2 id="🌟-New-Features"><a href="#🌟-New-Features" class="headerlink" title="🌟 New Features"></a>🌟 New Features</h2><ul>
-<li>Range of font size and color to <code>tagcloud</code> (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjQ4">#648<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>New <code>video</code> and warn when use <code>exturl</code> or <code>extlink</code> (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjUy">#652<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Mermaid (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjQ5">#649<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Likely share (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjc4">#678<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Chatra and Tidio chats service (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjgx">#681<i class="fa fa-external-link-alt"></i></span>)</li>
-<li><code>safari_rainbow</code> and <code>custom_scrollbar</code> (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjg2">#686<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>DisqusJS comment system (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzA1">#705<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Range of font size and color to <code>tagcloud</code> (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/648">#648</a>)</li>
+<li>New <code>video</code> and warn when use <code>exturl</code> or <code>extlink</code> (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/652">#652</a>)</li>
+<li>Mermaid (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/649">#649</a>)</li>
+<li>Likely share (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/678">#678</a>)</li>
+<li>Chatra and Tidio chats service (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/681">#681</a>)</li>
+<li><code>safari_rainbow</code> and <code>custom_scrollbar</code> (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/686">#686</a>)</li>
+<li>DisqusJS comment system (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/705">#705</a>)</li>
 </ul>
 <h2 id="⭐-Features"><a href="#⭐-Features" class="headerlink" title="⭐ Features"></a>⭐ Features</h2><ul>
-<li>Load <code>quicklink</code> on demand (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjM3">#637<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Force language options to Gitalk comment system (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjUz">#653<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>New <code>pdf</code> tag (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjU5">#659<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Amount option to <code>tagcloud</code> (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjYy">#662<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fancybox for group-picture and post-gallery (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjY3">#667<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>English support for Valine comment system (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjc2">#676<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Expand all level option of post TOC (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjc5">#679<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Icon option to sidebar chat button (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjg4">#688<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>New <code>text_align</code> option (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjgy">#682<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Dynamic unlimited <code>reward</code> additions and <code>animation</code> option (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjk1">#695<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Load <code>quicklink</code> on demand (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/637">#637</a>)</li>
+<li>Force language options to Gitalk comment system (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/653">#653</a>)</li>
+<li>New <code>pdf</code> tag (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/659">#659</a>)</li>
+<li>Amount option to <code>tagcloud</code> (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/662">#662</a>)</li>
+<li>Fancybox for group-picture and post-gallery (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/667">#667</a>)</li>
+<li>English support for Valine comment system (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/676">#676</a>)</li>
+<li>Expand all level option of post TOC (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/679">#679</a>)</li>
+<li>Icon option to sidebar chat button (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/688">#688</a>)</li>
+<li>New <code>text_align</code> option (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/682">#682</a>)</li>
+<li>Dynamic unlimited <code>reward</code> additions and <code>animation</code> option (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/695">#695</a>)</li>
 </ul>
 <h2 id="🛠-Improvements"><a href="#🛠-Improvements" class="headerlink" title="🛠 Improvements"></a>🛠 Improvements</h2><ul>
-<li>Fix bootstrap filename (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjQw">#640<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Change the spacing between sidebar elements (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjM4">#638<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Rename loader script for prevent wrong boostrap detection in Wappalyzer (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjQx">#641<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Update CDN url in <code>_config.yml</code> (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjY0">#664<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Remove <code>ua_parser</code> excess library (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjcx">#671<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Make a few documentational edits (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjcy">#672<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Move stylesheets from <code>.swig</code> to <code>.styl</code> files (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjgw">#680<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Remove unnecessary CSS prefix &amp; Update normalize.css (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjgz">#683<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Make <code>site-state-item</code> centered using <code>flex</code> (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzAw">#700<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Refactor Mist &amp; Muse menu bar using <code>flex</code> (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzAy">#702<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Remove <code>qihu_site_verification</code> and move some options to <code>SEO Settings</code> (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzA2">#706<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Make CSS cleaner using <code>tablet-mobile()</code> (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzI0">#724<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Remove redundant styles (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzI4">#728<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Make CSS simpler using macro (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzM4">#738<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Improve canonical path for vision in Google (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzQ4">#748<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Merge note.styl and note-modern.styl (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzUw">#750<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Reduce the use of <code>!important</code> for GitHub banner (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzQ0">#744<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>From now release drafts will maked automatically (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzY1">#765<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Improve console warning for non-supporting (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzY2">#766<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Fix bootstrap filename (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/640">#640</a>)</li>
+<li>Change the spacing between sidebar elements (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/638">#638</a>)</li>
+<li>Rename loader script for prevent wrong boostrap detection in Wappalyzer (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/641">#641</a>)</li>
+<li>Update CDN url in <code>_config.yml</code> (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/664">#664</a>)</li>
+<li>Remove <code>ua_parser</code> excess library (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/671">#671</a>)</li>
+<li>Make a few documentational edits (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/672">#672</a>)</li>
+<li>Move stylesheets from <code>.swig</code> to <code>.styl</code> files (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/680">#680</a>)</li>
+<li>Remove unnecessary CSS prefix &amp; Update normalize.css (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/683">#683</a>)</li>
+<li>Make <code>site-state-item</code> centered using <code>flex</code> (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/700">#700</a>)</li>
+<li>Refactor Mist &amp; Muse menu bar using <code>flex</code> (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/702">#702</a>)</li>
+<li>Remove <code>qihu_site_verification</code> and move some options to <code>SEO Settings</code> (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/706">#706</a>)</li>
+<li>Make CSS cleaner using <code>tablet-mobile()</code> (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/724">#724</a>)</li>
+<li>Remove redundant styles (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/728">#728</a>)</li>
+<li>Make CSS simpler using macro (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/738">#738</a>)</li>
+<li>Improve canonical path for vision in Google (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/748">#748</a>)</li>
+<li>Merge note.styl and note-modern.styl (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/750">#750</a>)</li>
+<li>Reduce the use of <code>!important</code> for GitHub banner (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/744">#744</a>)</li>
+<li>From now release drafts will maked automatically (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/765">#765</a>)</li>
+<li>Improve console warning for non-supporting (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/766">#766</a>)</li>
 <li>Change comparison for Release Drafter Bot</li>
 </ul>
 <h2 id="🐞-Bug-Fixes"><a href="#🐞-Bug-Fixes" class="headerlink" title="🐞 Bug Fixes"></a>🐞 Bug Fixes</h2><ul>
-<li>Diff code hightlight problem (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjY1">#665<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Lost <code>tracking_id</code> in <code>google_analytics</code> (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjY4">#668<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>For long mathjax equations with short viewport horizontal scrollbar will appear (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjY5">#669<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Colored link for modern notes with <code>exturl</code> (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjg1">#685<i class="fa fa-external-link-alt"></i></span>)</li>
-<li><code>reward</code> button vertical align text (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjkz">#693<i class="fa fa-external-link-alt"></i></span>)</li>
-<li><code>back2top</code> button on mobile, sidebar item margin and sidebar <code>exturl</code> link color (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjg0">#684<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Right margin bug on mobile devices (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzA5">#709<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Typo in Baidu transformation in <code>_config.yml</code> (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzE0">#714<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Sidebar button style on Pisces and Gemini (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzM1">#735<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Mathjax <code>li</code> style issue (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzUy">#752<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Remove <code>no-wrap</code> style from label tag (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzYz">#763<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Breadcrumbs now work with both <code>*.html</code> and <code>index.html</code> pages (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzY5">#769<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Diff code hightlight problem (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/665">#665</a>)</li>
+<li>Lost <code>tracking_id</code> in <code>google_analytics</code> (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/668">#668</a>)</li>
+<li>For long mathjax equations with short viewport horizontal scrollbar will appear (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/669">#669</a>)</li>
+<li>Colored link for modern notes with <code>exturl</code> (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/685">#685</a>)</li>
+<li><code>reward</code> button vertical align text (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/693">#693</a>)</li>
+<li><code>back2top</code> button on mobile, sidebar item margin and sidebar <code>exturl</code> link color (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/684">#684</a>)</li>
+<li>Right margin bug on mobile devices (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/709">#709</a>)</li>
+<li>Typo in Baidu transformation in <code>_config.yml</code> (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/714">#714</a>)</li>
+<li>Sidebar button style on Pisces and Gemini (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/735">#735</a>)</li>
+<li>Mathjax <code>li</code> style issue (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/752">#752</a>)</li>
+<li>Remove <code>no-wrap</code> style from label tag (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/763">#763</a>)</li>
+<li>Breadcrumbs now work with both <code>*.html</code> and <code>index.html</code> pages (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/769">#769</a>)</li>
 </ul>
 <h2 id="📖-Documentation"><a href="#📖-Documentation" class="headerlink" title="📖 Documentation"></a>📖 Documentation</h2><ul>
-<li>Add more contributors to contributors list (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjM5">#639<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Make ISSUE and PR template more readable (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjQ0">#644<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Add CII badge. (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzI5">#729<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Move some docs from <code>_config.yml</code> to official website (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzI1">#725<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Update README.md, remove unused URLs (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzI3">#727<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Add «Reporting Security Bugs» sections. (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzMw">#730<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Change Riot chat link. (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzMz">#733<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Add stevenjoezhang as a contributor (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzQx">#741<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Add «Thanks» section (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzM5">#739<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Add 1v9 as a contributor (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzQy">#742<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Add JiangTJ as a contributor (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzQz">#743<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Update labels and Chinese translation of CONTRIBUTING.md (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzQ3">#747<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Add liolok as a contributor (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzU1">#755<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Contributors per line: 6 instead of 7 (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzU2">#756<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Add ivan-nginx as a contributor (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzU3">#757<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Add <code>Improvement Need</code> label (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzY4">#768<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Add more contributors to contributors list (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/639">#639</a>)</li>
+<li>Make ISSUE and PR template more readable (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/644">#644</a>)</li>
+<li>Add CII badge. (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/729">#729</a>)</li>
+<li>Move some docs from <code>_config.yml</code> to official website (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/725">#725</a>)</li>
+<li>Update README.md, remove unused URLs (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/727">#727</a>)</li>
+<li>Add «Reporting Security Bugs» sections. (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/730">#730</a>)</li>
+<li>Change Riot chat link. (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/733">#733</a>)</li>
+<li>Add stevenjoezhang as a contributor (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/741">#741</a>)</li>
+<li>Add «Thanks» section (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/739">#739</a>)</li>
+<li>Add 1v9 as a contributor (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/742">#742</a>)</li>
+<li>Add JiangTJ as a contributor (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/743">#743</a>)</li>
+<li>Update labels and Chinese translation of CONTRIBUTING.md (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/747">#747</a>)</li>
+<li>Add liolok as a contributor (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/755">#755</a>)</li>
+<li>Contributors per line: 6 instead of 7 (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/756">#756</a>)</li>
+<li>Add ivan-nginx as a contributor (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/757">#757</a>)</li>
+<li>Add <code>Improvement Need</code> label (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/768">#768</a>)</li>
 </ul>
 <h2 id="🌍-Localization"><a href="#🌍-Localization" class="headerlink" title="🌍 Localization"></a>🌍 Localization</h2><ul>
-<li>New Crowdin translations (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjQ3">#647<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>New Crowdin translations (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjUw">#650<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>New Crowdin translations (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/647">#647</a>)</li>
+<li>New Crowdin translations (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/650">#650</a>)</li>
 </ul>
 <hr>
-<p>For full changes, see the <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L2NvbXBhcmUvdjcuMC4xLi4udjcuMS4w">comparison between 7.0.1 and 7.1.0<i class="fa fa-external-link-alt"></i></span></p>
-<p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3JlbGVhc2VzL3RhZy92Ny4xLjA=">Detailed changes for NexT v7.1.0<i class="fa fa-external-link-alt"></i></span></p>
+<p>For full changes, see the <a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/compare/v7.0.1...v7.1.0">comparison between 7.0.1 and 7.1.0</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/releases/tag/v7.1.0">Detailed changes for NexT v7.1.0</a></p>
 
     </div>
 
@@ -401,7 +401,7 @@
     </span>
     <span class="author" itemprop="copyrightHolder">FE-Cat</span>
   </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a>
   </div><div class="footer-custom">
 Website source code <span class="exturl theme-link" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG8tbmV4dC9oZXhvLW5leHQuZ2l0aHViLmlv">here</span>
 </div>

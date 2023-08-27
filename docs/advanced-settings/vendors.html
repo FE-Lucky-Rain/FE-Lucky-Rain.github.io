@@ -19,7 +19,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"www.feacat.com","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.18.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.18.0/config.min.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"www.feacat.com","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.18.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.18.0/config.min.js"></script>
 
     <meta name="description" content="NexT User Docs – Advanced Settings - Vendors">
 <meta property="og:type" content="website">
@@ -28,9 +28,9 @@
 <meta property="og:site_name" content="ROTA">
 <meta property="og:description" content="NexT User Docs – Advanced Settings - Vendors">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-08-27T05:25:41.022Z">
+<meta property="article:published_time" content="2023-08-27T09:04:06.458Z">
 <meta property="article:modified_time" content="2023-08-27T05:25:41.022Z">
-<meta property="article:author" content="FE-Cat">
+<meta property="article:author" content="FECat">
 <meta property="article:tag" content="Mesh, FEA, MBD, Simulink">
 <meta name="twitter:card" content="summary">
 
@@ -267,18 +267,18 @@
 <div class="note danger"><p>If you are using the latest master branch of NexT, please set <code>internal: local</code>.</p>
 </div>
 
-<h4 id="Third-party-Plugins"><a href="#Third-party-Plugins" class="headerlink" title="Third-party Plugins"></a>Third-party Plugins</h4><p><code>plugins: cdnjs</code> is used to set how to load the third-party plugins, e.g. <code>anime.js</code>. Third-party plugins are loaded from <span class="exturl" data-url="aHR0cHM6Ly9jZG5qcy5jb20v">CDNJS<i class="fa fa-external-link-alt"></i></span> CDN by default.</p>
-<p>And we also provide other optional CDNs, including the famous <span class="exturl" data-url="aHR0cHM6Ly91bnBrZy5jb20v">UNPKG<i class="fa fa-external-link-alt"></i></span> and <span class="exturl" data-url="aHR0cHM6Ly93d3cuanNkZWxpdnIuY29tLw==">jsDelivr<i class="fa fa-external-link-alt"></i></span>. These CDN providers are chosen to deliver our third-party plugins because they are fast and reliable. Set <code>plugins</code> to <code>unpkg</code> or <code>cdnjs</code> to load them from different CDN provider.</p>
+<h4 id="Third-party-Plugins"><a href="#Third-party-Plugins" class="headerlink" title="Third-party Plugins"></a>Third-party Plugins</h4><p><code>plugins: cdnjs</code> is used to set how to load the third-party plugins, e.g. <code>anime.js</code>. Third-party plugins are loaded from <a target="_blank" rel="noopener" href="https://cdnjs.com/">CDNJS</a> CDN by default.</p>
+<p>And we also provide other optional CDNs, including the famous <a target="_blank" rel="noopener" href="https://unpkg.com/">UNPKG</a> and <a target="_blank" rel="noopener" href="https://www.jsdelivr.com/">jsDelivr</a>. These CDN providers are chosen to deliver our third-party plugins because they are fast and reliable. Set <code>plugins</code> to <code>unpkg</code> or <code>cdnjs</code> to load them from different CDN provider.</p>
 <div class="note warning"><p>Particularly, if you are a Chinese blogger or most of your visits come from China, please note that <strong>the CDNJS is blocked in some parts of China</strong>, don&#39;t use it as your CDN provider.</p>
 </div>
 
-<div class="note info"><p>If your would like to load all third-party plugins from your site, please set <code>plugins</code> to <code>local</code> and install the <code>@next-theme/plugins</code> package: <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvcGx1Z2lucw==">https://github.com/next-theme/plugins<i class="fa fa-external-link-alt"></i></span><br>If your website is deployed in the local area network, then this will have a faster loading speed than CDN services.</p>
+<div class="note info"><p>If your would like to load all third-party plugins from your site, please set <code>plugins</code> to <code>local</code> and install the <code>@next-theme/plugins</code> package: <a target="_blank" rel="noopener" href="https://github.com/next-theme/plugins">https://github.com/next-theme/plugins</a><br>If your website is deployed in the local area network, then this will have a faster loading speed than CDN services.</p>
 </div>
 
 <h4 id="Custom-CDN-URLs"><a href="#Custom-CDN-URLs" class="headerlink" title="Custom CDN URLs"></a>Custom CDN URLs</h4><p>Sometimes you may need to use CDNs other than <code>jsdelivr</code>, <code>unpkg</code> or <code>cdnjs</code>. For example, users can get faster loading speed in certain areas using the mirror site of jsDelivr.</p>
 <p>To enable custom CDN URL, you need to set <code>internal: custom</code> and &#x2F; or <code>plugins: custom</code> in the <code>vendors</code> section, and then specify a CDN URL with the <code>custom_cdn_url</code> option.</p>
 <p>Remember to use the HTTPS protocol of CDN links when you enable HTTPS on your site.</p>
-<h5 id="jsDelivr-Mirrors"><a href="#jsDelivr-Mirrors" class="headerlink" title="jsDelivr Mirrors"></a>jsDelivr Mirrors</h5><p>jsDelivr could automatically minify the JS and CSS files, even if the package owner doesn&#39;t publish the minified version on npm. You just need to access <code>*.min.js</code> and  <code>*.min.css</code>, instead of <code>*.js</code> and  <code>*.css</code>. For more information: <span class="exturl" data-url="aHR0cHM6Ly93d3cuanNkZWxpdnIuY29tL2ZlYXR1cmVz">https://www.jsdelivr.com/features<i class="fa fa-external-link-alt"></i></span></p>
+<h5 id="jsDelivr-Mirrors"><a href="#jsDelivr-Mirrors" class="headerlink" title="jsDelivr Mirrors"></a>jsDelivr Mirrors</h5><p>jsDelivr could automatically minify the JS and CSS files, even if the package owner doesn&#39;t publish the minified version on npm. You just need to access <code>*.min.js</code> and  <code>*.min.css</code>, instead of <code>*.js</code> and  <code>*.css</code>. For more information: <a target="_blank" rel="noopener" href="https://www.jsdelivr.com/features">https://www.jsdelivr.com/features</a></p>
 <p>In theme NexT, you can simply use the variable <code>$&#123;minified&#125;</code> in <code>custom_cdn_url</code> to serve the minified version if you are using a mirror site of jsDelivr. NexT will automatically replace the variable <code>$&#123;minified&#125;</code> with the path of each JS file to load from CDN.</p>
 <figure class="highlight yml"><figcaption><span>NexT config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">vendors:</span></span><br><span class="line">  <span class="attr">custom_cdn_url:</span> <span class="string">https://fastly.jsdelivr.net/npm/$&#123;npm_name&#125;@$&#123;version&#125;/$&#123;minified&#125;</span></span><br></pre></td></tr></table></figure>
 
@@ -325,7 +325,7 @@
     </span>
     <span class="author" itemprop="copyrightHolder">FE-Cat</span>
   </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a>
   </div><div class="footer-custom">
 Website source code <span class="exturl theme-link" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG8tbmV4dC9oZXhvLW5leHQuZ2l0aHViLmlv">here</span>
 </div>

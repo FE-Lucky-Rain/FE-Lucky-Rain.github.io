@@ -19,7 +19,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"www.feacat.com","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.18.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.18.0/config.min.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"www.feacat.com","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.18.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.18.0/config.min.js"></script>
 
     <meta name="description" content="💥 Breaking Changes Custom CDN options (#428)vendors:  # The CDN provider of NexT internal scripts.-  # Available values: local | jsdelivr | unpkg | cdnjs+  # Available values: local | jsdelivr | unpk">
 <meta property="og:type" content="article">
@@ -30,7 +30,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-01-02T08:53:32.000Z">
 <meta property="article:modified_time" content="2023-08-27T05:25:41.014Z">
-<meta property="article:author" content="FE-Cat">
+<meta property="article:author" content="FECat">
 <meta property="article:tag" content="Mesh, FEA, MBD, Simulink">
 <meta name="twitter:card" content="summary">
 
@@ -227,7 +227,7 @@
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2022-01-02 08:53:32" itemprop="dateCreated datePublished" datetime="2022-01-02T08:53:32Z">2022-01-02</time>
+      <time title="Created: 2022-01-02 16:53:32" itemprop="dateCreated datePublished" datetime="2022-01-02T16:53:32+08:00">2022-01-02</time>
     </span>
 
   
@@ -254,24 +254,24 @@
     
     
     <div class="post-body" itemprop="articleBody"><h2 id="💥-Breaking-Changes"><a href="#💥-Breaking-Changes" class="headerlink" title="💥 Breaking Changes"></a>💥 Breaking Changes</h2><ul>
-<li>Custom CDN options (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3B1bGwvNDI4">#428<i class="fa fa-external-link-alt"></i></span>)<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">vendors:</span><br><span class="line">  # The CDN provider of NexT internal scripts.</span><br><span class="line"><span class="deletion">-  # Available values: local | jsdelivr | unpkg | cdnjs</span></span><br><span class="line"><span class="addition">+  # Available values: local | jsdelivr | unpkg | cdnjs | custom</span></span><br><span class="line">  # Warning: If you are using the latest master branch of NexT, please set `internal: local`</span><br><span class="line">  internal: local</span><br><span class="line">  # The default CDN provider of third-party plugins.</span><br><span class="line"><span class="deletion">-  # Available values: local | jsdelivr | unpkg | cdnjs</span></span><br><span class="line"><span class="addition">+  # Available values: local | jsdelivr | unpkg | cdnjs | custom</span></span><br><span class="line">  # Dependencies for `plugins: local`: https://github.com/next-theme/plugins</span><br><span class="line">  plugins: jsdelivr</span><br><span class="line"><span class="addition">+  # Custom CDN URL</span></span><br><span class="line"><span class="addition">+  # For example:</span></span><br><span class="line"><span class="addition">+  # custom_cdn_url: https://cdn.jsdelivr.net/npm/$&#123;npm_name&#125;@$&#123;version&#125;/$&#123;minified&#125;</span></span><br><span class="line"><span class="addition">+  # custom_cdn_url: https://cdnjs.cloudflare.com/ajax/libs/$&#123;cdnjs_name&#125;/$&#123;version&#125;/$&#123;cdnjs_file&#125;</span></span><br><span class="line"><span class="addition">+  custom_cdn_url:</span></span><br></pre></td></tr></table></figure></li>
+<li>Custom CDN options (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/pull/428">#428</a>)<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">vendors:</span><br><span class="line">  # The CDN provider of NexT internal scripts.</span><br><span class="line"><span class="deletion">-  # Available values: local | jsdelivr | unpkg | cdnjs</span></span><br><span class="line"><span class="addition">+  # Available values: local | jsdelivr | unpkg | cdnjs | custom</span></span><br><span class="line">  # Warning: If you are using the latest master branch of NexT, please set `internal: local`</span><br><span class="line">  internal: local</span><br><span class="line">  # The default CDN provider of third-party plugins.</span><br><span class="line"><span class="deletion">-  # Available values: local | jsdelivr | unpkg | cdnjs</span></span><br><span class="line"><span class="addition">+  # Available values: local | jsdelivr | unpkg | cdnjs | custom</span></span><br><span class="line">  # Dependencies for `plugins: local`: https://github.com/next-theme/plugins</span><br><span class="line">  plugins: jsdelivr</span><br><span class="line"><span class="addition">+  # Custom CDN URL</span></span><br><span class="line"><span class="addition">+  # For example:</span></span><br><span class="line"><span class="addition">+  # custom_cdn_url: https://cdn.jsdelivr.net/npm/$&#123;npm_name&#125;@$&#123;version&#125;/$&#123;minified&#125;</span></span><br><span class="line"><span class="addition">+  # custom_cdn_url: https://cdnjs.cloudflare.com/ajax/libs/$&#123;cdnjs_name&#125;/$&#123;version&#125;/$&#123;cdnjs_file&#125;</span></span><br><span class="line"><span class="addition">+  custom_cdn_url:</span></span><br></pre></td></tr></table></figure></li>
 </ul>
 <h2 id="🛠-Improvements"><a href="#🛠-Improvements" class="headerlink" title="🛠 Improvements"></a>🛠 Improvements</h2><ul>
-<li>Optimize changyan comment (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3B1bGwvNDE1">#415<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Update CONFIG.quicklink.ignores option (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC82MDkyZTllYzliNWFlNmQ5NzhlNmRkNjc5MTc1MWQ1ZGM4ZjYwNGIy">6092e9e<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Support codeblock mark option (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC9iNTFmZWRmYjJkYjQ1YjllMTZjZjIzNDRjMWRkMTZlYzVhZDVlNzFk">b51fedf<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Some minor fixes (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC9iZTIxZDVjNTMwYWY5ZGRmMTA2YTExM2VkN2Q2MjNlNDQzNmYzMWNh">be21d5c<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Optimize changyan comment (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/pull/415">#415</a>)</li>
+<li>Update CONFIG.quicklink.ignores option (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/commit/6092e9ec9b5ae6d978e6dd6791751d5dc8f604b2">6092e9e</a>)</li>
+<li>Support codeblock mark option (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/commit/b51fedfb2db45b9e16cf2344c1dd16ec5ad5e71d">b51fedf</a>)</li>
+<li>Some minor fixes (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/commit/be21d5c530af9ddf106a113ed7d623e4436f31ca">be21d5c</a>)</li>
 </ul>
 <h2 id="🌀-External-Changes"><a href="#🌀-External-Changes" class="headerlink" title="🌀 External Changes"></a>🌀 External Changes</h2><ul>
-<li>Update dependency hexo to v6 (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3B1bGwvNDI2">#426<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Update dependency eslint to v8.5.0 (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3B1bGwvNDE5">#419<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Update dependency hexo to v6 (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/pull/426">#426</a>)</li>
+<li>Update dependency eslint to v8.5.0 (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/pull/419">#419</a>)</li>
 </ul>
 <h2 id="🌍-Localization"><a href="#🌍-Localization" class="headerlink" title="🌍 Localization"></a>🌍 Localization</h2><ul>
-<li>New Crowdin updates (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3B1bGwvNDIz">#423<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>New Crowdin updates (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/pull/423">#423</a>)</li>
 </ul>
 <hr>
-<p>For full changes, see the <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbXBhcmUvdjguOC4yLi4udjguOS4w">comparison between v8.8.2 and v8.9.0<i class="fa fa-external-link-alt"></i></span></p>
-<p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3JlbGVhc2VzL3RhZy92OC45LjA=">Detailed changes for NexT v8.9.0<i class="fa fa-external-link-alt"></i></span></p>
+<p>For full changes, see the <a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/compare/v8.8.2...v8.9.0">comparison between v8.8.2 and v8.9.0</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/releases/tag/v8.9.0">Detailed changes for NexT v8.9.0</a></p>
 
     </div>
 
@@ -323,7 +323,7 @@
     </span>
     <span class="author" itemprop="copyrightHolder">FE-Cat</span>
   </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a>
   </div><div class="footer-custom">
 Website source code <span class="exturl theme-link" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG8tbmV4dC9oZXhvLW5leHQuZ2l0aHViLmlv">here</span>
 </div>

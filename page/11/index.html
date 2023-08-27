@@ -19,7 +19,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"www.feacat.com","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.18.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.18.0/config.min.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"www.feacat.com","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.18.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.18.0/config.min.js"></script>
 
     <meta name="description" content="ROTA - A Matlab tool for simulation.">
 <meta property="og:type" content="website">
@@ -28,7 +28,7 @@
 <meta property="og:site_name" content="ROTA">
 <meta property="og:description" content="ROTA - A Matlab tool for simulation.">
 <meta property="og:locale" content="en_US">
-<meta property="article:author" content="FE-Cat">
+<meta property="article:author" content="FECat">
 <meta property="article:tag" content="Mesh, FEA, MBD, Simulink">
 <meta name="twitter:card" content="summary">
 
@@ -223,7 +223,7 @@
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2020-06-01 03:33:43" itemprop="dateCreated datePublished" datetime="2020-06-01T03:33:43Z">2020-06-01</time>
+      <time title="Created: 2020-06-01 11:33:43" itemprop="dateCreated datePublished" datetime="2020-06-01T11:33:43+08:00">2020-06-01</time>
     </span>
 
   
@@ -251,35 +251,35 @@
     
     <div class="post-body" itemprop="articleBody">
           <h2 id="💥-Breaking-Changes"><a href="#💥-Breaking-Changes" class="headerlink" title="💥 Breaking Changes"></a>💥 Breaking Changes</h2><ul>
-<li>Fix darkmode tag-cloud color (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC9jYmNkM2YwNGFiZmJjMTVjODJmMWNmNDMwZWNhMTU1OTEwMTVmYWRj">cbcd3f0<i class="fa fa-external-link-alt"></i></span>)<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line"># TagCloud settings for tags page.</span><br><span class="line">tagcloud:</span><br><span class="line"><span class="deletion">-  # All values below are same as default, change them by yourself.</span></span><br><span class="line">  min: 12 # Minimum font size in px</span><br><span class="line">  max: 30 # Maximum font size in px</span><br><span class="line"><span class="deletion">-  start: &quot;#ccc&quot; # Start color (hex, rgba, hsla or color keywords)</span></span><br><span class="line"><span class="deletion">-  end: &quot;#111&quot; # End color (hex, rgba, hsla or color keywords)</span></span><br><span class="line"><span class="deletion">-  amount: 200 # Amount of tags, change it if you have more than 200 tags</span></span><br><span class="line"><span class="addition">+  amount: 200 # Total amount of tags</span></span><br><span class="line"><span class="addition">+  orderby: name # Order of tags</span></span><br><span class="line"><span class="addition">+  order: 1 # Sort order</span></span><br></pre></td></tr></table></figure></li>
-<li>Update Valine CDN URL (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC8zOTAwNThlOGExMThmMDhhNjJlNzAzNTBkMGI2ZmNiYWIxZjMzYzUz">390058e<i class="fa fa-external-link-alt"></i></span>)<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">valine:</span><br><span class="line">  ...</span><br><span class="line"><span class="deletion">-  notify: false # Mail notifier</span></span><br><span class="line"><span class="deletion">-  verify: false # Verification code</span></span><br></pre></td></tr></table></figure></li>
+<li>Fix darkmode tag-cloud color (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/commit/cbcd3f04abfbc15c82f1cf430eca15591015fadc">cbcd3f0</a>)<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line"># TagCloud settings for tags page.</span><br><span class="line">tagcloud:</span><br><span class="line"><span class="deletion">-  # All values below are same as default, change them by yourself.</span></span><br><span class="line">  min: 12 # Minimum font size in px</span><br><span class="line">  max: 30 # Maximum font size in px</span><br><span class="line"><span class="deletion">-  start: &quot;#ccc&quot; # Start color (hex, rgba, hsla or color keywords)</span></span><br><span class="line"><span class="deletion">-  end: &quot;#111&quot; # End color (hex, rgba, hsla or color keywords)</span></span><br><span class="line"><span class="deletion">-  amount: 200 # Amount of tags, change it if you have more than 200 tags</span></span><br><span class="line"><span class="addition">+  amount: 200 # Total amount of tags</span></span><br><span class="line"><span class="addition">+  orderby: name # Order of tags</span></span><br><span class="line"><span class="addition">+  order: 1 # Sort order</span></span><br></pre></td></tr></table></figure></li>
+<li>Update Valine CDN URL (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/commit/390058e8a118f08a62e70350d0b6fcbab1f33c53">390058e</a>)<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">valine:</span><br><span class="line">  ...</span><br><span class="line"><span class="deletion">-  notify: false # Mail notifier</span></span><br><span class="line"><span class="deletion">-  verify: false # Verification code</span></span><br></pre></td></tr></table></figure></li>
 </ul>
 <h2 id="🐞-Bug-Fixes"><a href="#🐞-Bug-Fixes" class="headerlink" title="🐞 Bug Fixes"></a>🐞 Bug Fixes</h2><ul>
-<li>Some minor fixes (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC9iZjM2NjZmZDE5YWM0NTA1M2RjNzlhZDFlNGE1M2NmZTk0YzYwOTY2">bf3666f<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fix darkmode pagination &amp; badge style (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC83MjFlNWI5YmQ0MDVjNjMxMWFiZDgyZDQwZTE0MWVjMWNhNDlkZDU4">721e5b9<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fix figcaption text overflow (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC80YmU4MjBhNDlmMTkzZTk1YzY0N2M4MzEzNTNjNjQ4OWViZWU4Mjlk">4be820a<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fix pandoc rendering error (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC8xNzUwMmRhY2Y0YjM4YmEzZWYzZGQyMTg1MmU0ZDA1ZjEyZTZhMDFh">17502da<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fix json filter (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC80MDEzNDUwNDAzMzNlMjk3NWQ0MTViM2E2YjIwNThmMjUzNjliZDQz">4013450<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Decode TOC link (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC8wZDJiM2FmNTBiM2I1OTdmYjNkMGVjZDZhNmZmZGZiZjZiOTI3NDVi">0d2b3af<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Some minor fixes (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/commit/bf3666fd19ac45053dc79ad1e4a53cfe94c60966">bf3666f</a>)</li>
+<li>Fix darkmode pagination &amp; badge style (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/commit/721e5b9bd405c6311abd82d40e141ec1ca49dd58">721e5b9</a>)</li>
+<li>Fix figcaption text overflow (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/commit/4be820a49f193e95c647c831353c6489ebee829d">4be820a</a>)</li>
+<li>Fix pandoc rendering error (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/commit/17502dacf4b38ba3ef3dd21852e4d05f12e6a01a">17502da</a>)</li>
+<li>Fix json filter (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/commit/401345040333e2975d415b3a6b2058f25369bd43">4013450</a>)</li>
+<li>Decode TOC link (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/commit/0d2b3af50b3b597fb3d0ecd6a6ffdfbf6b92745b">0d2b3af</a>)</li>
 </ul>
 <h2 id="🛠-Improvements"><a href="#🛠-Improvements" class="headerlink" title="🛠 Improvements"></a>🛠 Improvements</h2><ul>
-<li>Optimize copy-btn &amp; post-edit icon (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC83M2RmZjdjYjg1NzdhZTFmYTA2YTY0Nzc5NDk1ZWZlNGQ4NmVjZmY1">73dff7c<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Run lebab (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC83NGZhOWVjYzA1ZjliODhjNTgyZjQ1MWQ5YmViNGQ5MmY5ODQzYTM4">74fa9ec<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Optimize link-grid (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC9hZGU0ZjQ0ZmFhNDBhYmI1ZWQ1ZWI1NmQzMGRjMjFmYzNlNjBmMjBi">ade4f44<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Optimize copy-btn &amp; post-edit icon (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/commit/73dff7cb8577ae1fa06a64779495efe4d86ecff5">73dff7c</a>)</li>
+<li>Run lebab (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/commit/74fa9ecc05f9b88c582f451d9beb4d92f9843a38">74fa9ec</a>)</li>
+<li>Optimize link-grid (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/commit/ade4f44faa40abb5ed5eb56d30dc21fc3e60f20b">ade4f44</a>)</li>
 </ul>
 <h2 id="🌀-External-Changes"><a href="#🌀-External-Changes" class="headerlink" title="🌀 External Changes"></a>🌀 External Changes</h2><ul>
-<li>Update dependency eslint to v7.1.0 (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3B1bGwvMTE=">#11<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Update dependency js-yaml to v3.14.0 (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3B1bGwvMTA=">#10<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Update dependency eslint to v7.1.0 (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/pull/11">#11</a>)</li>
+<li>Update dependency js-yaml to v3.14.0 (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/pull/10">#10</a>)</li>
 </ul>
 <h2 id="📖-Documentation"><a href="#📖-Documentation" class="headerlink" title="📖 Documentation"></a>📖 Documentation</h2><ul>
-<li>Update docs for i18n (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC8zNjgwOGI5NWVhNjk0Y2ZhZTM0ZjAxZTE5MjVjZWY3ODZmYjJhOTRl">36808b9<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Update docs for i18n (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/commit/36808b95ea694cfae34f01e1925cef786fb2a94e">36808b9</a>)</li>
 </ul>
 <h2 id="🌍-Localization"><a href="#🌍-Localization" class="headerlink" title="🌍 Localization"></a>🌍 Localization</h2><ul>
-<li>New Crowdin translations (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3B1bGwvOA==">#8<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>New Crowdin translations (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/pull/8">#8</a>)</li>
 </ul>
 <hr>
-<p>For full changes, see the <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbXBhcmUvdjguMC4wLXJjLjIuLi52OC4wLjAtcmMuMw==">comparison between v8.0.0-rc.2 and v8.0.0-rc.3<i class="fa fa-external-link-alt"></i></span></p>
-<p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3JlbGVhc2VzL3RhZy92OC4wLjAtcmMuMw==">Detailed changes for NexT v8.0.0-rc.3<i class="fa fa-external-link-alt"></i></span></p>
+<p>For full changes, see the <a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/compare/v8.0.0-rc.2...v8.0.0-rc.3">comparison between v8.0.0-rc.2 and v8.0.0-rc.3</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/releases/tag/v8.0.0-rc.3">Detailed changes for NexT v8.0.0-rc.3</a></p>
 
       
     </div>
@@ -335,7 +335,7 @@
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2020-05-09 02:13:37" itemprop="dateCreated datePublished" datetime="2020-05-09T02:13:37Z">2020-05-09</time>
+      <time title="Created: 2020-05-09 10:13:37" itemprop="dateCreated datePublished" datetime="2020-05-09T10:13:37+08:00">2020-05-09</time>
     </span>
 
   
@@ -363,31 +363,31 @@
     
     <div class="post-body" itemprop="articleBody">
           <h2 id="💥-Breaking-Changes"><a href="#💥-Breaking-Changes" class="headerlink" title="💥 Breaking Changes"></a>💥 Breaking Changes</h2><ul>
-<li>Allow empty menu items (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC9hNTI3YmZkZjExZDU1OGZmZDk1OGNkMGEwYjA1NDE2ZmIxY2FhYTMz">a527bfd<i class="fa fa-external-link-alt"></i></span>)<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line"><span class="deletion">-override: false</span></span><br><span class="line"></span><br><span class="line">menu:</span><br><span class="line"><span class="deletion">-  home: / || fa fa-home</span></span><br><span class="line"><span class="addition">+  #home: / || fa fa-home</span></span><br><span class="line">  #about: /about/ || fa fa-user</span><br><span class="line">  #tags: /tags/ || fa fa-tags</span><br><span class="line">  #categories: /categories/ || fa fa-th</span><br><span class="line"><span class="deletion">-  archives: /archives/ || fa fa-archive</span></span><br><span class="line"><span class="addition">+  #archives: /archives/ || fa fa-archive</span></span><br><span class="line">  #schedule: /schedule/ || fa fa-calendar</span><br><span class="line">  #sitemap: /sitemap.xml || fa fa-sitemap</span><br><span class="line">  #commonweal: /404/ || fa fa-heartbeat</span><br></pre></td></tr></table></figure></li>
-<li>Update options of Valine (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC82ZTZmYzc0YWU5OGEwZWY3YWEzYWVhYmEzZTMzMGVmNzM1Njk4Yjdi">6e6fc74<i class="fa fa-external-link-alt"></i></span>)<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">valine:</span><br><span class="line"><span class="deletion">-  appid: # Your leancloud application appid</span></span><br><span class="line"><span class="deletion">-  appkey: # Your leancloud application appkey</span></span><br><span class="line"><span class="addition">+  appId: # Your leancloud application appid</span></span><br><span class="line"><span class="addition">+  appKey: # Your leancloud application appkey</span></span><br><span class="line">  ...</span><br><span class="line"><span class="deletion">-  guest_info: nick,mail,link # Custom comment header</span></span><br><span class="line"><span class="addition">+  meta: # Custom comment header</span></span><br><span class="line"><span class="addition">+    - nick</span></span><br><span class="line"><span class="addition">+    - mail</span></span><br><span class="line"><span class="addition">+    - link</span></span><br></pre></td></tr></table></figure></li>
-<li>Support using highlight.js (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC85ZmRhYmEyOTVhMmM2YzcwN2E3ZDk2ZDMzMTc2MmFiNTcxYjg5YzFh">9fdaba2<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Allow different highlight style for dark mode (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC8wM2U1MGQwMWFjNTlkMTM2ZDhkOWNjZGExODdkODk4YzBlNDI0MzMy">03e50d0<i class="fa fa-external-link-alt"></i></span>)<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">codeblock:</span><br><span class="line">  ...</span><br><span class="line"><span class="deletion">-  # Available values: normal | night | night eighties | night blue | night bright | solarized | solarized dark | galactic</span></span><br><span class="line"><span class="deletion">-  # See: https://github.com/chriskempson/tomorrow-theme</span></span><br><span class="line"><span class="deletion">-  highlight_theme: normal</span></span><br><span class="line"><span class="addition">+  # See: https://github.com/highlightjs/highlight.js/tree/master/src/styles</span></span><br><span class="line"><span class="addition">+  theme:</span></span><br><span class="line"><span class="addition">+    light: default</span></span><br><span class="line"><span class="addition">+    dark: dark</span></span><br></pre></td></tr></table></figure></li>
+<li>Allow empty menu items (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/commit/a527bfdf11d558ffd958cd0a0b05416fb1caaa33">a527bfd</a>)<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line"><span class="deletion">-override: false</span></span><br><span class="line"></span><br><span class="line">menu:</span><br><span class="line"><span class="deletion">-  home: / || fa fa-home</span></span><br><span class="line"><span class="addition">+  #home: / || fa fa-home</span></span><br><span class="line">  #about: /about/ || fa fa-user</span><br><span class="line">  #tags: /tags/ || fa fa-tags</span><br><span class="line">  #categories: /categories/ || fa fa-th</span><br><span class="line"><span class="deletion">-  archives: /archives/ || fa fa-archive</span></span><br><span class="line"><span class="addition">+  #archives: /archives/ || fa fa-archive</span></span><br><span class="line">  #schedule: /schedule/ || fa fa-calendar</span><br><span class="line">  #sitemap: /sitemap.xml || fa fa-sitemap</span><br><span class="line">  #commonweal: /404/ || fa fa-heartbeat</span><br></pre></td></tr></table></figure></li>
+<li>Update options of Valine (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/commit/6e6fc74ae98a0ef7aa3aeaba3e330ef735698b7b">6e6fc74</a>)<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">valine:</span><br><span class="line"><span class="deletion">-  appid: # Your leancloud application appid</span></span><br><span class="line"><span class="deletion">-  appkey: # Your leancloud application appkey</span></span><br><span class="line"><span class="addition">+  appId: # Your leancloud application appid</span></span><br><span class="line"><span class="addition">+  appKey: # Your leancloud application appkey</span></span><br><span class="line">  ...</span><br><span class="line"><span class="deletion">-  guest_info: nick,mail,link # Custom comment header</span></span><br><span class="line"><span class="addition">+  meta: # Custom comment header</span></span><br><span class="line"><span class="addition">+    - nick</span></span><br><span class="line"><span class="addition">+    - mail</span></span><br><span class="line"><span class="addition">+    - link</span></span><br></pre></td></tr></table></figure></li>
+<li>Support using highlight.js (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/commit/9fdaba295a2c6c707a7d96d331762ab571b89c1a">9fdaba2</a>)</li>
+<li>Allow different highlight style for dark mode (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/commit/03e50d01ac59d136d8d9ccda187d898c0e424332">03e50d0</a>)<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">codeblock:</span><br><span class="line">  ...</span><br><span class="line"><span class="deletion">-  # Available values: normal | night | night eighties | night blue | night bright | solarized | solarized dark | galactic</span></span><br><span class="line"><span class="deletion">-  # See: https://github.com/chriskempson/tomorrow-theme</span></span><br><span class="line"><span class="deletion">-  highlight_theme: normal</span></span><br><span class="line"><span class="addition">+  # See: https://github.com/highlightjs/highlight.js/tree/master/src/styles</span></span><br><span class="line"><span class="addition">+  theme:</span></span><br><span class="line"><span class="addition">+    light: default</span></span><br><span class="line"><span class="addition">+    dark: dark</span></span><br></pre></td></tr></table></figure></li>
 </ul>
 <h2 id="🐞-Bug-Fixes"><a href="#🐞-Bug-Fixes" class="headerlink" title="🐞 Bug Fixes"></a>🐞 Bug Fixes</h2><ul>
-<li>Fix: bind DOMContentLoaded event on document instead of window (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC9jZDVlNTQxOTNiY2JlY2Q0NzcwMGJmMmM5OGM0ZDRiMmJjNzM1ODg5">cd5e541<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fix: bind pjax event on document instead of window (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC83NTY5NWRmNzZhNmNhZmMxOTU4OTc0ZWU2NDE3YTQxNWViOWViNzNj">75695df<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fix tables text align (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC8wMGM2NGNjZTg5NjJjMjVhMGM5ZGRjZjFmZTU5ZjkzMmE0Y2FhNzZj">00c64cc<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Fix: bind DOMContentLoaded event on document instead of window (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/commit/cd5e54193bcbecd47700bf2c98c4d4b2bc735889">cd5e541</a>)</li>
+<li>Fix: bind pjax event on document instead of window (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/commit/75695df76a6cafc1958974ee6417a415eb9eb73c">75695df</a>)</li>
+<li>Fix tables text align (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/commit/00c64cce8962c25a0c9ddcf1fe59f932a4caa76c">00c64cc</a>)</li>
 </ul>
 <h2 id="🛠-Improvements"><a href="#🛠-Improvements" class="headerlink" title="🛠 Improvements"></a>🛠 Improvements</h2><ul>
-<li>Use npm to determine the latest version (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC8yZGU1MGI0NmJlODg2OTU0MDViMDNkYTliZGMxYjljMWMwNGQ2YmE4">2de50b4<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Optimize reward button style (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC9lNjFjMjhkMDA5ODQzN2JlZDM3YzlkOTgyMWJlZGEzMTRiNDRjN2Yw">e61c28d<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Remove highlight-container (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC85NTI3ZWY2YjA2YmYyMmNhMGIwYjYzMjkzZWVjYzgwMDBiYjVlY2Fi">9527ef6<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Use npm to determine the latest version (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/commit/2de50b46be88695405b03da9bdc1b9c1c04d6ba8">2de50b4</a>)</li>
+<li>Optimize reward button style (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/commit/e61c28d0098437bed37c9d9821beda314b44c7f0">e61c28d</a>)</li>
+<li>Remove highlight-container (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/commit/9527ef6b06bf22ca0b0b63293eecc8000bb5ecab">9527ef6</a>)</li>
 </ul>
 <h2 id="🌀-External-Changes"><a href="#🌀-External-Changes" class="headerlink" title="🌀 External Changes"></a>🌀 External Changes</h2><ul>
-<li>Remove canvas_nest (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC82MzI3NjhjYzFmMzIwZWM1ZWFmYmI4MTRlYjM3OGNhOGFkODgzMjRm">632768c<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Remove canvas_nest (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/commit/632768cc1f320ec5eafbb814eb378ca8ad88324f">632768c</a>)</li>
 </ul>
 <h2 id="📖-Documentation"><a href="#📖-Documentation" class="headerlink" title="📖 Documentation"></a>📖 Documentation</h2><ul>
-<li>Update README (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC8xZmQyOTIzNWE2ZGMwNDBlODI5ZmM4MDA2ZGI4Mjc0MWNlOWFjYjM1">1fd2923<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Update docs (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC8zZGNkMzU5NGQxNGNmM2IxNWQ5NjRmODc2MmYxM2Y5NDhjMmYwYWQ1">3dcd359<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Update README (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/commit/1fd29235a6dc040e829fc8006db82741ce9acb35">1fd2923</a>)</li>
+<li>Update docs (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/commit/3dcd3594d14cf3b15d964f8762f13f948c2f0ad5">3dcd359</a>)</li>
 </ul>
 <hr>
-<p>For full changes, see the <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbXBhcmUvdjguMC4wLXJjLjEuLi52OC4wLjAtcmMuMg==">comparison between v8.0.0-rc.1 and v8.0.0-rc.2<i class="fa fa-external-link-alt"></i></span></p>
-<p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3JlbGVhc2VzL3RhZy92OC4wLjAtcmMuMg==">Detailed changes for NexT v8.0.0-rc.2<i class="fa fa-external-link-alt"></i></span></p>
+<p>For full changes, see the <a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/compare/v8.0.0-rc.1...v8.0.0-rc.2">comparison between v8.0.0-rc.1 and v8.0.0-rc.2</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/releases/tag/v8.0.0-rc.2">Detailed changes for NexT v8.0.0-rc.2</a></p>
 
       
     </div>
@@ -443,7 +443,7 @@
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2020-04-06 03:21:20" itemprop="dateCreated datePublished" datetime="2020-04-06T03:21:20Z">2020-04-06</time>
+      <time title="Created: 2020-04-06 11:21:20" itemprop="dateCreated datePublished" datetime="2020-04-06T11:21:20+08:00">2020-04-06</time>
     </span>
 
   
@@ -471,17 +471,17 @@
     
     <div class="post-body" itemprop="articleBody">
           <h2 id="💥-Breaking-Changes"><a href="#💥-Breaking-Changes" class="headerlink" title="💥 Breaking Changes"></a>💥 Breaking Changes</h2><ul>
-<li>Migrate to Font-Awesome 5 (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTQzOA==">https://github.com/theme-next/hexo-theme-next/pull/1438<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Migrate to Font-Awesome 5 (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1438">https://github.com/theme-next/hexo-theme-next/pull/1438</a>)</li>
 <li>Change the extension of the template files from <code>swig</code> to <code>njk</code></li>
 </ul>
 <h2 id="🐞-Bug-Fixes"><a href="#🐞-Bug-Fixes" class="headerlink" title="🐞 Bug Fixes"></a>🐞 Bug Fixes</h2><ul>
-<li>Fix exturl title (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L2NvbW1pdC9kOWM2ZDhiOTJkYjQxM2YzMzgxYjBkYzdiNGVkNGIwNjZhNjQ1M2Y1">d9c6d8b<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Fix exturl title (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/commit/d9c6d8b92db413f3381b0dc7b4ed4b066a6453f5">d9c6d8b</a>)</li>
 </ul>
 <h2 id="🛠-Improvements"><a href="#🛠-Improvements" class="headerlink" title="🛠 Improvements"></a>🛠 Improvements</h2><ul>
-<li>Optimize dark mode blockquote style (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L2NvbW1pdC9iMGJkMmRkZTgwMGMxNTk4MGJlNzRiMDU0ODRkNjUyMjE1ZDliZjg4">b0bd2dd<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Optimize main-menu &amp; sidebar-nav style (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L2NvbW1pdC9jYTE5YTlkODJkYmE2NTIxZWU3YjljYjJiZWZkYTUxYzZhMWJkMDYz">ca19a9d<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Optimize dark mode blockquote style (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/commit/b0bd2dde800c15980be74b05484d652215d9bf88">b0bd2dd</a>)</li>
+<li>Optimize main-menu &amp; sidebar-nav style (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/commit/ca19a9d82dba6521ee7b9cb2befda51c6a1bd063">ca19a9d</a>)</li>
 </ul>
-<p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3JlbGVhc2VzL3RhZy92OC4wLjAtcmMuMQ==">Detailed changes for NexT v8.0.0-rc.1<i class="fa fa-external-link-alt"></i></span></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/releases/tag/v8.0.0-rc.1">Detailed changes for NexT v8.0.0-rc.1</a></p>
 
       
     </div>
@@ -537,7 +537,7 @@
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2020-04-01 01:21:37" itemprop="dateCreated datePublished" datetime="2020-04-01T01:21:37Z">2020-04-01</time>
+      <time title="Created: 2020-04-01 09:21:37" itemprop="dateCreated datePublished" datetime="2020-04-01T09:21:37+08:00">2020-04-01</time>
     </span>
 
   
@@ -565,37 +565,37 @@
     
     <div class="post-body" itemprop="articleBody">
           <h2 id="💥-Breaking-Changes"><a href="#💥-Breaking-Changes" class="headerlink" title="💥 Breaking Changes"></a>💥 Breaking Changes</h2><ul>
-<li>Multilingual switch button support (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTM5MQ==">#1391<i class="fa fa-external-link-alt"></i></span>)<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line"><span class="addition">+# Show multilingual switcher in footer.</span></span><br><span class="line"><span class="addition">+language_switcher: false</span></span><br></pre></td></tr></table></figure></li>
+<li>Multilingual switch button support (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1391">#1391</a>)<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line"><span class="addition">+# Show multilingual switcher in footer.</span></span><br><span class="line"><span class="addition">+language_switcher: false</span></span><br></pre></td></tr></table></figure></li>
 <li>Remove <code>safari_rainbow</code> option in <code>_config.yml</code><figure class="highlight diff"><table><tr><td class="code"><pre><span class="line"><span class="deletion">-# Hide sticky headers and color the menu bar on Safari (iOS / macOS).</span></span><br><span class="line"><span class="deletion">-safari_rainbow: false</span></span><br></pre></td></tr></table></figure></li>
 </ul>
 <h2 id="⭐-Features"><a href="#⭐-Features" class="headerlink" title="⭐ Features"></a>⭐ Features</h2><ul>
-<li>Simplify <code>footer.powered</code> settings (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTQzMg==">#1432<i class="fa fa-external-link-alt"></i></span>)<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">footer:</span><br><span class="line">...</span><br><span class="line"><span class="deletion">-  powered:</span></span><br><span class="line"><span class="deletion">-    # Hexo link (Powered by Hexo).</span></span><br><span class="line"><span class="deletion">-    enable: true</span></span><br><span class="line"><span class="deletion">-    # Version info of Hexo after Hexo link (vX.X.X).</span></span><br><span class="line"><span class="deletion">-    version: true</span></span><br><span class="line"><span class="deletion">-</span></span><br><span class="line"><span class="deletion">-  theme:</span></span><br><span class="line"><span class="deletion">-    # Theme &amp; scheme info link (Theme - NexT.scheme).</span></span><br><span class="line"><span class="deletion">-    enable: true</span></span><br><span class="line"><span class="deletion">-    # Version info of NexT after scheme info (vX.X.X).</span></span><br><span class="line"><span class="deletion">-    version: true</span></span><br><span class="line"><span class="addition">+  # Powered by Hexo &amp; NexT</span></span><br><span class="line"><span class="addition">+  powered: true</span></span><br></pre></td></tr></table></figure></li>
-<li>New <code>leancloud_visitors</code> option <code>server_url</code> (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTQyNg==">#1426<i class="fa fa-external-link-alt"></i></span>)<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">leancloud_visitors:</span><br><span class="line"><span class="deletion">-  betterPerformance: false</span></span><br><span class="line"><span class="addition">+  # Required for apps from CN region</span></span><br><span class="line"><span class="addition">+  server_url: # &lt;your server url&gt;</span></span><br></pre></td></tr></table></figure></li>
-<li>Remove <code>seo</code> option in <code>_config.yml</code> (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTQxNA==">#1414<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Simplify <code>footer.powered</code> settings (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1432">#1432</a>)<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">footer:</span><br><span class="line">...</span><br><span class="line"><span class="deletion">-  powered:</span></span><br><span class="line"><span class="deletion">-    # Hexo link (Powered by Hexo).</span></span><br><span class="line"><span class="deletion">-    enable: true</span></span><br><span class="line"><span class="deletion">-    # Version info of Hexo after Hexo link (vX.X.X).</span></span><br><span class="line"><span class="deletion">-    version: true</span></span><br><span class="line"><span class="deletion">-</span></span><br><span class="line"><span class="deletion">-  theme:</span></span><br><span class="line"><span class="deletion">-    # Theme &amp; scheme info link (Theme - NexT.scheme).</span></span><br><span class="line"><span class="deletion">-    enable: true</span></span><br><span class="line"><span class="deletion">-    # Version info of NexT after scheme info (vX.X.X).</span></span><br><span class="line"><span class="deletion">-    version: true</span></span><br><span class="line"><span class="addition">+  # Powered by Hexo &amp; NexT</span></span><br><span class="line"><span class="addition">+  powered: true</span></span><br></pre></td></tr></table></figure></li>
+<li>New <code>leancloud_visitors</code> option <code>server_url</code> (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1426">#1426</a>)<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">leancloud_visitors:</span><br><span class="line"><span class="deletion">-  betterPerformance: false</span></span><br><span class="line"><span class="addition">+  # Required for apps from CN region</span></span><br><span class="line"><span class="addition">+  server_url: # &lt;your server url&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li>Remove <code>seo</code> option in <code>_config.yml</code> (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1414">#1414</a>)</li>
 </ul>
 <h2 id="🐞-Bug-Fixes"><a href="#🐞-Bug-Fixes" class="headerlink" title="🐞 Bug Fixes"></a>🐞 Bug Fixes</h2><ul>
-<li>Escaping html in search results (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTQxOA==">#1418<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Escaping html in search results (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1418">#1418</a>)</li>
 </ul>
 <h2 id="🛠-Improvements"><a href="#🛠-Improvements" class="headerlink" title="🛠 Improvements"></a>🛠 Improvements</h2><ul>
-<li>Animation for search-popup (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTQyNw==">#1427<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fix dark styles of buttons (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTQwOQ==">#1409<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Drop PDFObject (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTQwMA==">#1400<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Optimize the loading of exturl (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTM5NA==">#1394<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Animation for search-popup (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1427">#1427</a>)</li>
+<li>Fix dark styles of buttons (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1409">#1409</a>)</li>
+<li>Drop PDFObject (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1400">#1400</a>)</li>
+<li>Optimize the loading of exturl (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1394">#1394</a>)</li>
 </ul>
 <h2 id="🌀-External-Changes"><a href="#🌀-External-Changes" class="headerlink" title="🌀 External Changes"></a>🌀 External Changes</h2><ul>
-<li>Drop PDFObject (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTQwMA==">#1400<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Drop PDFObject (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1400">#1400</a>)</li>
 </ul>
 <h2 id="📖-Documentation"><a href="#📖-Documentation" class="headerlink" title="📖 Documentation"></a>📖 Documentation</h2><ul>
-<li>Updated recommended CDN URL in _config.yml (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTM5OA==">#1398<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Updated recommended CDN URL in _config.yml (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1398">#1398</a>)</li>
 </ul>
 <h2 id="🌍-Localization"><a href="#🌍-Localization" class="headerlink" title="🌍 Localization"></a>🌍 Localization</h2><ul>
-<li>New Crowdin translations (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTQxMw==">#1413<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>New Crowdin translations (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTA3NA==">#1074<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Arabic translation (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTQwMQ==">#1401<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>New Crowdin translations (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1413">#1413</a>)</li>
+<li>New Crowdin translations (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1074">#1074</a>)</li>
+<li>Arabic translation (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1401">#1401</a>)</li>
 </ul>
 <hr>
-<p>For full changes, see the <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L2NvbXBhcmUvdjcuNy4yLi4udjcuOC4w">comparison between v7.7.2 and v7.8.0<i class="fa fa-external-link-alt"></i></span></p>
-<p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3JlbGVhc2VzL3RhZy92Ny44LjA=">Detailed changes for NexT v7.8.0<i class="fa fa-external-link-alt"></i></span></p>
+<p>For full changes, see the <a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/compare/v7.7.2...v7.8.0">comparison between v7.7.2 and v7.8.0</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/releases/tag/v7.8.0">Detailed changes for NexT v7.8.0</a></p>
 
       
     </div>
@@ -632,7 +632,7 @@
     </span>
     <span class="author" itemprop="copyrightHolder">FE-Cat</span>
   </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a>
   </div><div class="footer-custom">
 Website source code <span class="exturl theme-link" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG8tbmV4dC9oZXhvLW5leHQuZ2l0aHViLmlv">here</span>
 </div>
