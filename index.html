@@ -212,7 +212,7 @@
           
               <span class="post-sticky-flag" title="Sticky">
                 <i class="fa fa-thumbtack"></i>
-              </span><a href="/hexo-theme-next/" class="post-title-link" itemprop="url">Welcome to the ROTA!</a>
+              </span><a href="/hexo-theme-next/" class="post-title-link" itemprop="url">Welcome to ROTA!</a>
         </h2>
 
         <div class="post-meta-container">
@@ -239,7 +239,7 @@
           <p>Welcome to the ROTA documentation site! ROTA is a opensource MATLAB tool for the simulation. </p>
 <p>ROTA starts from mesh generation to component modelling, trying to connect control, engineering calculation, finite element analysis and multi-body analysis</p>
 <h3 id="Framework"><a href="#Framework" class="headerlink" title="Framework"></a>Framework</h3><h3 id="Download"><a href="#Download" class="headerlink" title="Download"></a>Download</h3><h3 id="Contact-me"><a href="#Contact-me" class="headerlink" title="Contact me"></a>Contact me</h3><ul>
-<li>If you have any questions, you can contact me on the email <a href="mailto:&#120;&#x79;&#51;&#x39;&#x32;&#x31;&#x37;&#54;&#52;&#x36;&#50;&#64;&#103;&#109;&#97;&#x69;&#108;&#x2e;&#x63;&#111;&#109;">&#120;&#x79;&#51;&#x39;&#x32;&#x31;&#x37;&#54;&#52;&#x36;&#50;&#64;&#103;&#109;&#97;&#x69;&#108;&#x2e;&#x63;&#111;&#109;</a></li>
+<li>If you have any questions, you can contact me on the email <a href="mailto:&#120;&#121;&#x33;&#x39;&#x32;&#49;&#55;&#54;&#x34;&#54;&#x32;&#64;&#103;&#109;&#97;&#105;&#x6c;&#x2e;&#99;&#x6f;&#x6d;">&#120;&#121;&#x33;&#x39;&#x32;&#49;&#55;&#54;&#x34;&#54;&#x32;&#64;&#103;&#109;&#97;&#105;&#x6c;&#x2e;&#99;&#x6f;&#x6d;</a></li>
 </ul>
 
       
@@ -267,7 +267,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://www.feacat.com/ROTA-v1-introduced/">
+    <link itemprop="mainEntityOfPage" href="http://www.feacat.com/MergePDF_V01/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/logo.jpg">
@@ -285,7 +285,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/ROTA-v1-introduced/" class="post-title-link" itemprop="url">NexT v7 Introduced</a>
+          <a href="/MergePDF_V01/" class="post-title-link" itemprop="url">MergePDF_V01</a>
         </h2>
 
         <div class="post-meta-container">
@@ -296,7 +296,7 @@
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2019-01-05 09:57:00" itemprop="dateCreated datePublished" datetime="2019-01-05T09:57:00+08:00">2019-01-05</time>
+      <time title="Created: 2023-08-27 23:00:00" itemprop="dateCreated datePublished" datetime="2023-08-27T23:00:00+08:00">2023-08-27</time>
     </span>
 
   
@@ -309,48 +309,27 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>From this year we will start to development NexT v7. And NexT v6 will not be cutted-out for now. Instead of this, we will continue maintenance for version 6 with simultaneous development of version 7.</p>
-<h2 id="Versions-Difference"><a href="#Versions-Difference" class="headerlink" title="Versions Difference"></a>Versions Difference</h2><p>What changes planned in that versions? Good question, here they are:</p>
+          <p>When serval people are writing at the same time or an article needs different layout styles, it is necessary to merge the pdf file.</p>
+<p>MergePDF_V01 is a simple MATLAB app to merge serval PDF files.</p>
+<p>[toc]</p>
+<h2 id="1-Demo"><a href="#1-Demo" class="headerlink" title="1. Demo"></a>1. Demo</h2><p><img src="/..%5Cimages%5CMergePDF_V01.assets/image-20230827230009708.png" alt="image-20230827230009708" loading="lazy"></p>
+<center><b>Figure 1　GUI layout</strong></center>
+
 <ul>
-<li>Development (<strong>v7</strong>) mean → all <strong>bugfixes</strong>, <strong>optimizations</strong> and <strong>features</strong> will be added in this version.</li>
-<li>Maintenance (<strong>v6</strong>) mean → all <strong>bugfixes</strong> and <strong>optimizations (partially)</strong> only will be added in this version.</li>
+<li><strong>Step 1 Select input PDF files</strong></li>
 </ul>
-<p>As we can see, v6 will be more stable version, unlike of v7. If someone want more stability with less features, recommended to use v6 without any fear about no maintenance for this version in the future.</p>
-<h2 id="Objectives-of-Version-7"><a href="#Objectives-of-Version-7" class="headerlink" title="Objectives of Version 7"></a>Objectives of Version 7</h2><p>There are several globally targets for NexT v7 changes planned:</p>
+<p><img src="/..%5Cimages%5CMergePDF_V01.assets/image-20230827230728326.png" alt="image-20230827230728326" loading="lazy"></p>
+<center><b>Figure 2　Select input files</strong></center>
+
+<p>&#x3D;&#x3D;File names in the cell array are sorted in the order that the user&#39;s platform uses&#x3D;&#x3D;</p>
 <ul>
-<li>Replace all Nested Strings by Template Literals. This bring to code more readable (example: #557)</li>
-<li>Cut out all possible <a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/tree/master/source/lib">3rd-party libraries</a> for provide minimum weight and maximum generation speed</li>
-<li>Targets, described in <a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/issues/67">NexT v7.x Roadmap</a>.</li>
+<li><strong>Step 2 Select output path and merge files</strong></li>
 </ul>
-<h2 id="Branching-Models"><a href="#Branching-Models" class="headerlink" title="Branching Models"></a>Branching Models</h2><p>All last year there are no problem with branching model management. All was simple:</p>
-<ol>
-<li>We had <strong>master</strong> branch, which at the same time was <strong>development</strong> and <strong>production</strong> branch.</li>
-<li><strong>Changes</strong> created in separate temporarily branches were <strong>merged into master</strong> branch via pull request&#39;s.</li>
-<li><strong>Once per month</strong> we made <strong>tag releases</strong> from current <strong>master</strong> branch.</li>
-</ol>
-<p>It was when NexT development came with single version. For now, we must support multiple versions: v6.x and v7.x, what bring some complicated as for maintainers and for users too.</p>
-<p>Last several days I thinking a lot about this and it seems the right way was successfully founded. And before understand my decision, let&#39;s see on all articles I finded.</p>
-<ol>
-<li><strong>A successful Git branching model</strong> → <a target="_blank" rel="noopener" href="https://nvie.com/posts/a-successful-git-branching-model/">https://nvie.com/posts/a-successful-git-branching-model/</a><br><img src="https://user-images.githubusercontent.com/16944225/50646627-d8d66e80-0f76-11e9-9d6e-44a3c7a46bb4.png" alt="image" loading="lazy"></li>
-<li><strong>Cactus model</strong> → <a target="_blank" rel="noopener" href="https://barro.github.io/2016/02/a-succesful-git-branching-model-considered-harmful/">https://barro.github.io/2016/02/a-succesful-git-branching-model-considered-harmful/</a><br><img src="https://user-images.githubusercontent.com/16944225/50647494-00c6d180-0f79-11e9-9e7b-e39c1af9e84b.png" alt="image" loading="lazy"></li>
-<li><strong>OneFlow model</strong> → <a target="_blank" rel="noopener" href="https://www.endoflineblog.com/oneflow-a-git-branching-model-and-workflow">https://www.endoflineblog.com/oneflow-a-git-branching-model-and-workflow</a><br><img src="https://user-images.githubusercontent.com/16944225/50647637-60bd7800-0f79-11e9-9216-41754c5d590f.png" alt="image" loading="lazy"></li>
-<li><strong>A stable mainline branching model</strong> → <a target="_blank" rel="noopener" href="http://www.bitsnbites.eu/a-stable-mainline-branching-model-for-git/">http://www.bitsnbites.eu/a-stable-mainline-branching-model-for-git/</a><br><img src="https://user-images.githubusercontent.com/16944225/50647741-a5491380-0f79-11e9-8166-d7379ce86444.png" alt="image" loading="lazy"><br><img src="https://user-images.githubusercontent.com/16944225/50647766-b8f47a00-0f79-11e9-9f5a-076ceaddd962.png" alt="image" loading="lazy"></li>
-</ol>
-<p>So, lets comment this models:</p>
-<ol>
-<li>A little bit complicated for development. <code>master</code> branch keep only releases versions, but we already have tags once per month. And I read some negative responses about this branching model.</li>
-<li>Only one thing let me get to doubt: rebased branches. Yes, on local branches anyone can do what he&#39;s want, but we talking about remote branches, how we will working with them. This model is good, but need some changes to use it.</li>
-<li>Again: <code>rebase</code> + <code>merge --no--ff</code> – only with a little difference with allow to minimize merged commits history. Anyway, history will not linear.</li>
-<li>So, this is similar to our model, with except – releases created not only under the tags, but under branches too. As I understand, branches serve for temporary maintenance multiple software versions. And this model exactly what we need! With some changes, of course...</li>
-</ol>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/ROTA-v1-introduced/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
+<p><img src="/..%5Cimages%5CMergePDF_V01.assets/image-20230827231850867.png" alt="image-20230827231850867" loading="lazy"></p>
+<center><b>Figure 3　Merge PDF files</strong></center>
+
+<h2 id="2-Download"><a href="#2-Download" class="headerlink" title="2. Download"></a>2. Download</h2><p>You and download the codes at <a target="_blank" rel="noopener" href="https://github.com/FE-Lucky-Rain/Tool">https://github.com/FE-Lucky-Rain/Tool</a></p>
+
       
     </div>
 
