@@ -2,15 +2,15 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>ROTA</title>
   
+  <subtitle>Doing happy things!</subtitle>
+  <link href="http://www.feacat.com/atom.xml" rel="self"/>
   
-  <link href="https://theme-next.js.org/atom.xml" rel="self"/>
-  
-  <link href="https://theme-next.js.org/"/>
+  <link href="http://www.feacat.com/"/>
   <updated>2023-08-27T05:25:41.008Z</updated>
-  <id>https://theme-next.js.org/</id>
+  <id>http://www.feacat.com/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>FE-Cat</name>
     
   </author>
   
@@ -18,8 +18,8 @@
   
   <entry>
     <title>NexT 8.18.0 Released</title>
-    <link href="https://theme-next.js.org/next-8-18-0-released/"/>
-    <id>https://theme-next.js.org/next-8-18-0-released/</id>
+    <link href="http://www.feacat.com/next-8-18-0-released/"/>
+    <id>http://www.feacat.com/next-8-18-0-released/</id>
     <published>2023-08-02T07:57:06.000Z</published>
     <updated>2023-08-27T05:25:41.008Z</updated>
     
@@ -40,8 +40,8 @@
   
   <entry>
     <title>NexT 8.17.1 Released</title>
-    <link href="https://theme-next.js.org/next-8-17-1-released/"/>
-    <id>https://theme-next.js.org/next-8-17-1-released/</id>
+    <link href="http://www.feacat.com/next-8-17-1-released/"/>
+    <id>http://www.feacat.com/next-8-17-1-released/</id>
     <published>2023-07-02T03:04:59.000Z</published>
     <updated>2023-08-27T05:25:41.008Z</updated>
     
@@ -62,8 +62,8 @@
   
   <entry>
     <title>NexT 8.17.0 Released</title>
-    <link href="https://theme-next.js.org/next-8-17-0-released/"/>
-    <id>https://theme-next.js.org/next-8-17-0-released/</id>
+    <link href="http://www.feacat.com/next-8-17-0-released/"/>
+    <id>http://www.feacat.com/next-8-17-0-released/</id>
     <published>2023-06-04T05:43:32.000Z</published>
     <updated>2023-08-27T05:25:41.007Z</updated>
     
@@ -84,8 +84,8 @@
   
   <entry>
     <title>NexT 8.16.0 Released</title>
-    <link href="https://theme-next.js.org/next-8-16-0-released/"/>
-    <id>https://theme-next.js.org/next-8-16-0-released/</id>
+    <link href="http://www.feacat.com/next-8-16-0-released/"/>
+    <id>http://www.feacat.com/next-8-16-0-released/</id>
     <published>2023-05-06T01:57:22.000Z</published>
     <updated>2023-08-27T05:25:41.007Z</updated>
     
@@ -106,8 +106,8 @@
   
   <entry>
     <title>NexT 8.15.1 Released</title>
-    <link href="https://theme-next.js.org/next-8-15-1-released/"/>
-    <id>https://theme-next.js.org/next-8-15-1-released/</id>
+    <link href="http://www.feacat.com/next-8-15-1-released/"/>
+    <id>http://www.feacat.com/next-8-15-1-released/</id>
     <published>2023-04-02T02:50:13.000Z</published>
     <updated>2023-08-27T05:25:41.007Z</updated>
     
@@ -128,8 +128,8 @@
   
   <entry>
     <title>NexT 8.15.0 Released</title>
-    <link href="https://theme-next.js.org/next-8-15-0-released/"/>
-    <id>https://theme-next.js.org/next-8-15-0-released/</id>
+    <link href="http://www.feacat.com/next-8-15-0-released/"/>
+    <id>http://www.feacat.com/next-8-15-0-released/</id>
     <published>2023-03-01T12:02:38.000Z</published>
     <updated>2023-08-27T05:25:41.006Z</updated>
     
@@ -150,8 +150,8 @@
   
   <entry>
     <title>NexT 8.14.2 Released</title>
-    <link href="https://theme-next.js.org/next-8-14-2-released/"/>
-    <id>https://theme-next.js.org/next-8-14-2-released/</id>
+    <link href="http://www.feacat.com/next-8-14-2-released/"/>
+    <id>http://www.feacat.com/next-8-14-2-released/</id>
     <published>2023-02-01T04:23:38.000Z</published>
     <updated>2023-08-27T05:25:41.006Z</updated>
     
@@ -172,8 +172,8 @@
   
   <entry>
     <title>NexT 8.14.1 Released</title>
-    <link href="https://theme-next.js.org/next-8-14-1-released/"/>
-    <id>https://theme-next.js.org/next-8-14-1-released/</id>
+    <link href="http://www.feacat.com/next-8-14-1-released/"/>
+    <id>http://www.feacat.com/next-8-14-1-released/</id>
     <published>2023-01-01T13:26:46.000Z</published>
     <updated>2023-08-27T05:25:41.006Z</updated>
     
@@ -194,8 +194,8 @@
   
   <entry>
     <title>NexT 8.14.0 Released</title>
-    <link href="https://theme-next.js.org/next-8-14-0-released/"/>
-    <id>https://theme-next.js.org/next-8-14-0-released/</id>
+    <link href="http://www.feacat.com/next-8-14-0-released/"/>
+    <id>http://www.feacat.com/next-8-14-0-released/</id>
     <published>2022-12-02T06:14:16.000Z</published>
     <updated>2023-08-27T05:25:41.005Z</updated>
     
@@ -216,8 +216,8 @@
   
   <entry>
     <title>NexT 8.13.2 Released</title>
-    <link href="https://theme-next.js.org/next-8-13-2-released/"/>
-    <id>https://theme-next.js.org/next-8-13-2-released/</id>
+    <link href="http://www.feacat.com/next-8-13-2-released/"/>
+    <id>http://www.feacat.com/next-8-13-2-released/</id>
     <published>2022-11-03T02:26:55.000Z</published>
     <updated>2023-08-27T05:25:41.005Z</updated>
     
@@ -238,8 +238,8 @@
   
   <entry>
     <title>NexT 8.13.1 Released</title>
-    <link href="https://theme-next.js.org/next-8-13-1-released/"/>
-    <id>https://theme-next.js.org/next-8-13-1-released/</id>
+    <link href="http://www.feacat.com/next-8-13-1-released/"/>
+    <id>http://www.feacat.com/next-8-13-1-released/</id>
     <published>2022-10-03T16:25:10.000Z</published>
     <updated>2023-08-27T05:25:41.005Z</updated>
     
@@ -260,8 +260,8 @@
   
   <entry>
     <title>NexT 8.13.0 Released</title>
-    <link href="https://theme-next.js.org/next-8-13-0-released/"/>
-    <id>https://theme-next.js.org/next-8-13-0-released/</id>
+    <link href="http://www.feacat.com/next-8-13-0-released/"/>
+    <id>http://www.feacat.com/next-8-13-0-released/</id>
     <published>2022-09-10T16:03:39.000Z</published>
     <updated>2023-08-27T05:25:41.004Z</updated>
     
@@ -282,8 +282,8 @@
   
   <entry>
     <title>NexT 8.12.3 Released</title>
-    <link href="https://theme-next.js.org/next-8-12-3-released/"/>
-    <id>https://theme-next.js.org/next-8-12-3-released/</id>
+    <link href="http://www.feacat.com/next-8-12-3-released/"/>
+    <id>http://www.feacat.com/next-8-12-3-released/</id>
     <published>2022-08-02T03:40:23.000Z</published>
     <updated>2023-08-27T05:25:41.004Z</updated>
     
@@ -303,8 +303,8 @@
   
   <entry>
     <title>NexT 8.12.2 Released</title>
-    <link href="https://theme-next.js.org/next-8-12-2-released/"/>
-    <id>https://theme-next.js.org/next-8-12-2-released/</id>
+    <link href="http://www.feacat.com/next-8-12-2-released/"/>
+    <id>http://www.feacat.com/next-8-12-2-released/</id>
     <published>2022-07-05T15:41:43.000Z</published>
     <updated>2023-08-27T05:25:41.003Z</updated>
     
@@ -324,8 +324,8 @@
   
   <entry>
     <title>NexT 8.12.1 Released</title>
-    <link href="https://theme-next.js.org/next-8-12-1-released/"/>
-    <id>https://theme-next.js.org/next-8-12-1-released/</id>
+    <link href="http://www.feacat.com/next-8-12-1-released/"/>
+    <id>http://www.feacat.com/next-8-12-1-released/</id>
     <published>2022-06-01T19:15:09.000Z</published>
     <updated>2023-08-27T05:25:41.003Z</updated>
     
@@ -345,8 +345,8 @@
   
   <entry>
     <title>NexT 8.11.1 Released</title>
-    <link href="https://theme-next.js.org/next-8-11-1-released/"/>
-    <id>https://theme-next.js.org/next-8-11-1-released/</id>
+    <link href="http://www.feacat.com/next-8-11-1-released/"/>
+    <id>http://www.feacat.com/next-8-11-1-released/</id>
     <published>2022-05-01T08:46:45.000Z</published>
     <updated>2023-08-27T05:25:41.003Z</updated>
     
@@ -366,8 +366,8 @@
   
   <entry>
     <title>NexT 8.11.0 Released</title>
-    <link href="https://theme-next.js.org/next-8-11-0-released/"/>
-    <id>https://theme-next.js.org/next-8-11-0-released/</id>
+    <link href="http://www.feacat.com/next-8-11-0-released/"/>
+    <id>http://www.feacat.com/next-8-11-0-released/</id>
     <published>2022-04-01T04:56:46.000Z</published>
     <updated>2023-08-27T05:25:41.002Z</updated>
     
@@ -387,8 +387,8 @@
   
   <entry>
     <title>NexT 8.10.1 Released</title>
-    <link href="https://theme-next.js.org/next-8-10-1-released/"/>
-    <id>https://theme-next.js.org/next-8-10-1-released/</id>
+    <link href="http://www.feacat.com/next-8-10-1-released/"/>
+    <id>http://www.feacat.com/next-8-10-1-released/</id>
     <published>2022-03-01T14:00:12.000Z</published>
     <updated>2023-08-27T05:25:41.002Z</updated>
     
@@ -408,8 +408,8 @@
   
   <entry>
     <title>NexT 8.10.0 Released</title>
-    <link href="https://theme-next.js.org/next-8-10-0-released/"/>
-    <id>https://theme-next.js.org/next-8-10-0-released/</id>
+    <link href="http://www.feacat.com/next-8-10-0-released/"/>
+    <id>http://www.feacat.com/next-8-10-0-released/</id>
     <published>2022-02-08T04:18:33.000Z</published>
     <updated>2023-08-27T05:25:41.001Z</updated>
     
@@ -429,8 +429,8 @@
   
   <entry>
     <title>NexT 8.9.0 Released</title>
-    <link href="https://theme-next.js.org/next-8-9-0-released/"/>
-    <id>https://theme-next.js.org/next-8-9-0-released/</id>
+    <link href="http://www.feacat.com/next-8-9-0-released/"/>
+    <id>http://www.feacat.com/next-8-9-0-released/</id>
     <published>2022-01-02T08:53:32.000Z</published>
     <updated>2023-08-27T05:25:41.014Z</updated>
     
