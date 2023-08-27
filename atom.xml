@@ -6,7 +6,7 @@
   <link href="http://www.feacat.com/atom.xml" rel="self"/>
   
   <link href="http://www.feacat.com/"/>
-  <updated>2023-08-27T15:36:59.170Z</updated>
+  <updated>2023-08-27T15:49:15.997Z</updated>
   <id>http://www.feacat.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://www.feacat.com/MergePDF_V01/"/>
     <id>http://www.feacat.com/MergePDF_V01/</id>
     <published>2023-08-27T15:00:00.000Z</published>
-    <updated>2023-08-27T15:36:59.170Z</updated>
+    <updated>2023-08-27T15:49:15.997Z</updated>
     
-    <content type="html"><![CDATA[<p>When serval people are writing at the same time or an article needs different layout styles, it is necessary to merge the pdf file.</p><p>MergePDF_V01 is a simple MATLAB app to merge serval PDF files.</p><p>[toc]</p><h2 id="1-Demo"><a href="#1-Demo" class="headerlink" title="1. Demo"></a>1. Demo</h2><p><img src="/..%5Cimages%5CMergePDF_V01.assets/image-20230827230009708.png" alt="image-20230827230009708" loading="lazy"></p><center><b>Figure 1　GUI layout</strong></center><ul><li><strong>Step 1 Select input PDF files</strong></li></ul><p><img src="/..%5Cimages%5CMergePDF_V01.assets/image-20230827230728326.png" alt="image-20230827230728326" loading="lazy"></p><center><b>Figure 2　Select input files</strong></center><p>&#x3D;&#x3D;File names in the cell array are sorted in the order that the user&#39;s platform uses&#x3D;&#x3D;</p><ul><li><strong>Step 2 Select output path and merge files</strong></li></ul><p><img src="/..%5Cimages%5CMergePDF_V01.assets/image-20230827231850867.png" alt="image-20230827231850867" loading="lazy"></p><center><b>Figure 3　Merge PDF files</strong></center><h2 id="2-Download"><a href="#2-Download" class="headerlink" title="2. Download"></a>2. Download</h2><p>You and download the codes at <a href="https://github.com/FE-Lucky-Rain/Tool">https://github.com/FE-Lucky-Rain/Tool</a></p>]]></content>
+    <content type="html"><![CDATA[<p>When serval people are writing at the same time or an article needs different layout styles, it is necessary to merge the pdf file.</p><p>MergePDF_V01 is a simple MATLAB app to merge serval PDF files.</p><h2 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h2><p><img src="/../images/MergePDF_V01.assets/image-20230827230009708.png" alt="image-20230827230009708" loading="lazy"></p><center>Figure 1　GUI layout</center><ul><li><strong>Step 1 Select input PDF files</strong></li></ul><p><img src="/../images/MergePDF_V01.assets/image-20230827230728326.png" alt="image-20230827230728326" loading="lazy"></p><center>Figure 2　Select input files</center><p><em>File names in the cell array are sorted in the order that the user&#39;s platform uses</em></p><ul><li><strong>Step 2 Select output path and merge files</strong></li></ul><p><img src="/../images/MergePDF_V01.assets/image-20230827231850867.png" alt="image-20230827231850867" loading="lazy"></p><center>Figure 3　Merge PDF files</center><h2 id="Download"><a href="#Download" class="headerlink" title="Download"></a>Download</h2><p>You and download the codes at <a href="https://github.com/FE-Lucky-Rain/Tool">https://github.com/FE-Lucky-Rain/Tool</a></p>]]></content>
     
     
       
