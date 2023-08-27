@@ -93,7 +93,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-bell fa-fw"></i>Home</a></li><li class="menu-item menu-item-docs"><a href="/docs/" rel="section"><i class="fa fa-book fa-fw"></i>Docs</a></li><li class="menu-item menu-item-plugins"><a href="/plugins/" rel="section"><i class="fa fa-flask fa-fw"></i>Plugins</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">76</span></a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-bell fa-fw"></i>Home</a></li><li class="menu-item menu-item-docs"><a href="/docs/" rel="section"><i class="fa fa-book fa-fw"></i>Docs</a></li><li class="menu-item menu-item-theorys"><a href="/theory/" rel="section"><i class="fa fa-infinity fa-fw"></i>Theorys</a></li><li class="menu-item menu-item-demo"><a href="/Demo/" rel="section"><i class="fa fa-hammer fa-fw"></i>Demo</a></li><li class="menu-item menu-item-tools"><a href="/tools/" rel="section"><i class="fa fa-tools fa-fw"></i>Tools</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">2</span></a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
         </a>
@@ -158,7 +158,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">76</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -267,7 +267,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://www.feacat.com/next-8-18-0-released/">
+    <link itemprop="mainEntityOfPage" href="http://www.feacat.com/ROTA-v1-introduced/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/logo.jpg">
@@ -285,7 +285,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/next-8-18-0-released/" class="post-title-link" itemprop="url">NexT 8.18.0 Released</a>
+          <a href="/ROTA-v1-introduced/" class="post-title-link" itemprop="url">NexT v7 Introduced</a>
         </h2>
 
         <div class="post-meta-container">
@@ -296,7 +296,7 @@
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2023-08-02 07:57:06" itemprop="dateCreated datePublished" datetime="2023-08-02T07:57:06+08:00">2023-08-02</time>
+      <time title="Created: 2019-01-05 09:57:00" itemprop="dateCreated datePublished" datetime="2019-01-05T09:57:00+08:00">2019-01-05</time>
     </span>
 
   
@@ -309,39 +309,48 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <!-- Release notes generated using configuration in .github/release.yml at v8.18.0 -->
-
-<h2 id="What-s-Changed"><a href="#What-s-Changed" class="headerlink" title="What&#39;s Changed"></a>What&#39;s Changed</h2><h3 id="💥-Breaking-Changes"><a href="#💥-Breaking-Changes" class="headerlink" title="💥 Breaking Changes"></a>💥 Breaking Changes</h3><ul>
-<li>Upgrade to fancybox 5 by @stevenjoezhang in <a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/pull/677">https://github.com/next-theme/hexo-theme-next/pull/677</a></li>
+          <p>From this year we will start to development NexT v7. And NexT v6 will not be cutted-out for now. Instead of this, we will continue maintenance for version 6 with simultaneous development of version 7.</p>
+<h2 id="Versions-Difference"><a href="#Versions-Difference" class="headerlink" title="Versions Difference"></a>Versions Difference</h2><p>What changes planned in that versions? Good question, here they are:</p>
+<ul>
+<li>Development (<strong>v7</strong>) mean → all <strong>bugfixes</strong>, <strong>optimizations</strong> and <strong>features</strong> will be added in this version.</li>
+<li>Maintenance (<strong>v6</strong>) mean → all <strong>bugfixes</strong> and <strong>optimizations (partially)</strong> only will be added in this version.</li>
 </ul>
-<h3 id="🌟-New-Features"><a href="#🌟-New-Features" class="headerlink" title="🌟 New Features"></a>🌟 New Features</h3><ul>
-<li>Support folding code blocks by @stevenjoezhang in <a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/pull/679">https://github.com/next-theme/hexo-theme-next/pull/679</a><figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">codeblock:</span><br><span class="line"><span class="addition">+  # Fold code block</span></span><br><span class="line"><span class="addition">+  fold:</span></span><br><span class="line"><span class="addition">+    enable: false</span></span><br><span class="line"><span class="addition">+    height: 500</span></span><br></pre></td></tr></table></figure></li>
+<p>As we can see, v6 will be more stable version, unlike of v7. If someone want more stability with less features, recommended to use v6 without any fear about no maintenance for this version in the future.</p>
+<h2 id="Objectives-of-Version-7"><a href="#Objectives-of-Version-7" class="headerlink" title="Objectives of Version 7"></a>Objectives of Version 7</h2><p>There are several globally targets for NexT v7 changes planned:</p>
+<ul>
+<li>Replace all Nested Strings by Template Literals. This bring to code more readable (example: #557)</li>
+<li>Cut out all possible <a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/tree/master/source/lib">3rd-party libraries</a> for provide minimum weight and maximum generation speed</li>
+<li>Targets, described in <a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/issues/67">NexT v7.x Roadmap</a>.</li>
 </ul>
-<h3 id="⭐-Features"><a href="#⭐-Features" class="headerlink" title="⭐ Features"></a>⭐ Features</h3><ul>
-<li>Remove gitter support (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/commit/223ea199f38eba48fc70c3d28a0a05809948c877">223ea19</a>)<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line"><span class="deletion">-# Gitter is a chat and networking platform.</span></span><br><span class="line"><span class="deletion">-# For more information: https://gitter.im</span></span><br><span class="line"><span class="deletion">-gitter:</span></span><br><span class="line"><span class="deletion">-  enable: false</span></span><br><span class="line"><span class="deletion">-  room:</span></span><br></pre></td></tr></table></figure></li>
-<li>Remove link posts feature (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/commit/a24450d9cfc6a6f7e5f6ddfabd6167fb6c0857d9">a24450d</a>)</li>
-</ul>
-<h3 id="🐞-Bug-Fixes"><a href="#🐞-Bug-Fixes" class="headerlink" title="🐞 Bug Fixes"></a>🐞 Bug Fixes</h3><ul>
-<li>Fix next_url: add new option to decodeURI (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/commit/b85201b9b871ec090274f82d0851285eb6552c43">b85201b</a>)</li>
-</ul>
-<h3 id="🛠-Improvements"><a href="#🛠-Improvements" class="headerlink" title="🛠 Improvements"></a>🛠 Improvements</h3><ul>
-<li>Update fa CSS selector (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/commit/0624149b055b18fe6a458f940bfe5870fb8f2bc3">0624149</a>)</li>
-<li>Create code-container element (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/commit/c596155ef956def01a4a739faab6ef16d26ffb36">c596155</a>)</li>
-</ul>
-<h3 id="🌀-External-Changes"><a href="#🌀-External-Changes" class="headerlink" title="🌀 External Changes"></a>🌀 External Changes</h3><ul>
-<li>Update dependency stylelint to v15 by @renovate in <a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/pull/611">https://github.com/next-theme/hexo-theme-next/pull/611</a></li>
-<li>Update dependency hexo-renderer-marked to v6.1.1 by @renovate in <a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/pull/675">https://github.com/next-theme/hexo-theme-next/pull/675</a></li>
-<li>Update dependency eslint to v8.46.0 by @renovate in <a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/pull/676">https://github.com/next-theme/hexo-theme-next/pull/676</a></li>
-<li>Update dependency c8 to v8.0.1 by @renovate in <a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/pull/680">https://github.com/next-theme/hexo-theme-next/pull/680</a></li>
-<li>Refactor Pull Request Reminder (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/commit/8fd8f9247c51e706290eeb365fb1d0b80f7384a4">8fd8f92</a>)</li>
-</ul>
-<h3 id="📖-Documentation"><a href="#📖-Documentation" class="headerlink" title="📖 Documentation"></a>📖 Documentation</h3><ul>
-<li>Update gitter url (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/commit/d3b76a8599e7339e1f9641fe9e4e360dc2895d49">d3b76a8</a>)</li>
-<li>Add npm downloads badge (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/commit/dc8e5e17fa9fd433374f0f6746bf317144291687">dc8e5e1</a>)</li>
-</ul>
-<p><strong>Full Changelog</strong>: <a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/compare/v8.17.1...v8.18.0">https://github.com/next-theme/hexo-theme-next/compare/v8.17.1...v8.18.0</a></p>
-<p><a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/releases/tag/v8.18.0">Detailed changes for NexT v8.18.0</a></p>
-
+<h2 id="Branching-Models"><a href="#Branching-Models" class="headerlink" title="Branching Models"></a>Branching Models</h2><p>All last year there are no problem with branching model management. All was simple:</p>
+<ol>
+<li>We had <strong>master</strong> branch, which at the same time was <strong>development</strong> and <strong>production</strong> branch.</li>
+<li><strong>Changes</strong> created in separate temporarily branches were <strong>merged into master</strong> branch via pull request&#39;s.</li>
+<li><strong>Once per month</strong> we made <strong>tag releases</strong> from current <strong>master</strong> branch.</li>
+</ol>
+<p>It was when NexT development came with single version. For now, we must support multiple versions: v6.x and v7.x, what bring some complicated as for maintainers and for users too.</p>
+<p>Last several days I thinking a lot about this and it seems the right way was successfully founded. And before understand my decision, let&#39;s see on all articles I finded.</p>
+<ol>
+<li><strong>A successful Git branching model</strong> → <a target="_blank" rel="noopener" href="https://nvie.com/posts/a-successful-git-branching-model/">https://nvie.com/posts/a-successful-git-branching-model/</a><br><img src="https://user-images.githubusercontent.com/16944225/50646627-d8d66e80-0f76-11e9-9d6e-44a3c7a46bb4.png" alt="image" loading="lazy"></li>
+<li><strong>Cactus model</strong> → <a target="_blank" rel="noopener" href="https://barro.github.io/2016/02/a-succesful-git-branching-model-considered-harmful/">https://barro.github.io/2016/02/a-succesful-git-branching-model-considered-harmful/</a><br><img src="https://user-images.githubusercontent.com/16944225/50647494-00c6d180-0f79-11e9-9e7b-e39c1af9e84b.png" alt="image" loading="lazy"></li>
+<li><strong>OneFlow model</strong> → <a target="_blank" rel="noopener" href="https://www.endoflineblog.com/oneflow-a-git-branching-model-and-workflow">https://www.endoflineblog.com/oneflow-a-git-branching-model-and-workflow</a><br><img src="https://user-images.githubusercontent.com/16944225/50647637-60bd7800-0f79-11e9-9216-41754c5d590f.png" alt="image" loading="lazy"></li>
+<li><strong>A stable mainline branching model</strong> → <a target="_blank" rel="noopener" href="http://www.bitsnbites.eu/a-stable-mainline-branching-model-for-git/">http://www.bitsnbites.eu/a-stable-mainline-branching-model-for-git/</a><br><img src="https://user-images.githubusercontent.com/16944225/50647741-a5491380-0f79-11e9-8166-d7379ce86444.png" alt="image" loading="lazy"><br><img src="https://user-images.githubusercontent.com/16944225/50647766-b8f47a00-0f79-11e9-9f5a-076ceaddd962.png" alt="image" loading="lazy"></li>
+</ol>
+<p>So, lets comment this models:</p>
+<ol>
+<li>A little bit complicated for development. <code>master</code> branch keep only releases versions, but we already have tags once per month. And I read some negative responses about this branching model.</li>
+<li>Only one thing let me get to doubt: rebased branches. Yes, on local branches anyone can do what he&#39;s want, but we talking about remote branches, how we will working with them. This model is good, but need some changes to use it.</li>
+<li>Again: <code>rebase</code> + <code>merge --no--ff</code> – only with a little difference with allow to minimize merged commits history. Anyway, history will not linear.</li>
+<li>So, this is similar to our model, with except – releases created not only under the tags, but under branches too. As I understand, branches serve for temporary maintenance multiple software versions. And this model exactly what we need! With some changes, of course...</li>
+</ol>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/ROTA-v1-introduced/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -359,183 +368,6 @@
 
 
 
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://www.feacat.com/next-8-17-1-released/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/logo.jpg">
-      <meta itemprop="name" content="FECat">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ROTA">
-      <meta itemprop="description" content="Stay Simple. Stay Open.">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | ROTA">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/next-8-17-1-released/" class="post-title-link" itemprop="url">NexT 8.17.1 Released</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2023-07-02 03:04:59" itemprop="dateCreated datePublished" datetime="2023-07-02T03:04:59+08:00">2023-07-02</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <!-- Release notes generated using configuration in .github/release.yml at v8.17.1 -->
-
-<h2 id="What-s-Changed"><a href="#What-s-Changed" class="headerlink" title="What&#39;s Changed"></a>What&#39;s Changed</h2><h3 id="⭐-Features"><a href="#⭐-Features" class="headerlink" title="⭐ Features"></a>⭐ Features</h3><ul>
-<li>Remove AddThis share (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/commit/b9ba532df888783736d957553456d9aa77c6bec4">b9ba532</a>)<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line"><span class="deletion">-# AddThis Share. See: https://www.addthis.com</span></span><br><span class="line"><span class="deletion">-# Go to https://www.addthis.com/dashboard to customize your tools.</span></span><br><span class="line"><span class="deletion">-add_this_id:</span></span><br></pre></td></tr></table></figure></li>
-<li>Allow disabling the copyright statement (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/commit/72302c2e4dcfc2db1e7ed72156ed4274b585e737">72302c2</a>)<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">footer:</span></span><br><span class="line">  <span class="attr">copyright:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="🐞-Bug-Fixes"><a href="#🐞-Bug-Fixes" class="headerlink" title="🐞 Bug Fixes"></a>🐞 Bug Fixes</h3><ul>
-<li>Display warning message only once (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/commit/824885ed0a15c1e3adc716ff2273e6b0a0dac428">824885e</a>)</li>
-</ul>
-<h3 id="🛠-Improvements"><a href="#🛠-Improvements" class="headerlink" title="🛠 Improvements"></a>🛠 Improvements</h3><ul>
-<li>Update stylelint rule (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/commit/2e1de3efa59f9878b91209b889dcff2e31cd0b81">2e1de3e</a>)</li>
-<li>Use mermaid.run (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/commit/eedd1893071bf63a09f70ab7fdbb526e63a61730">eedd189</a>)</li>
-</ul>
-<h3 id="🌀-External-Changes"><a href="#🌀-External-Changes" class="headerlink" title="🌀 External Changes"></a>🌀 External Changes</h3><ul>
-<li>Update dependency hexo-renderer-marked to v6.1.0 by @renovate in <a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/pull/665">https://github.com/next-theme/hexo-theme-next/pull/665</a></li>
-<li>Update dependency c8 to v8 by @renovate in <a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/pull/668">https://github.com/next-theme/hexo-theme-next/pull/668</a></li>
-<li>Update dependency eslint to v8.44.0 by @renovate in <a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/pull/669">https://github.com/next-theme/hexo-theme-next/pull/669</a></li>
-</ul>
-<h3 id="🌍-Localization"><a href="#🌍-Localization" class="headerlink" title="🌍 Localization"></a>🌍 Localization</h3><ul>
-<li>New Crowdin updates by @stevenjoezhang in <a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/pull/672">https://github.com/next-theme/hexo-theme-next/pull/672</a></li>
-</ul>
-<p><strong>Full Changelog</strong>: <a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/compare/v8.17.0...v8.17.1">https://github.com/next-theme/hexo-theme-next/compare/v8.17.0...v8.17.1</a></p>
-<p><a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/releases/tag/v8.17.1">Detailed changes for NexT v8.17.1</a></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://www.feacat.com/next-8-17-0-released/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/logo.jpg">
-      <meta itemprop="name" content="FECat">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ROTA">
-      <meta itemprop="description" content="Stay Simple. Stay Open.">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | ROTA">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/next-8-17-0-released/" class="post-title-link" itemprop="url">NexT 8.17.0 Released</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2023-06-04 05:43:32" itemprop="dateCreated datePublished" datetime="2023-06-04T05:43:32+08:00">2023-06-04</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <!-- Release notes generated using configuration in .github/release.yml at v8.17.0 -->
-
-<h2 id="What-s-Changed"><a href="#What-s-Changed" class="headerlink" title="What&#39;s Changed"></a>What&#39;s Changed</h2><h3 id="🌟-New-Features"><a href="#🌟-New-Features" class="headerlink" title="🌟 New Features"></a>🌟 New Features</h3><ul>
-<li>Add wavedrom support by @r12f in <a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/pull/655">https://github.com/next-theme/hexo-theme-next/pull/655</a><figure class="highlight diff"><table><tr><td class="code"><pre><span class="line"><span class="addition">+# WaveDrom tag</span></span><br><span class="line"><span class="addition">+wavedrom:</span></span><br><span class="line"><span class="addition">+  enable: false</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="🌀-External-Changes"><a href="#🌀-External-Changes" class="headerlink" title="🌀 External Changes"></a>🌀 External Changes</h3><ul>
-<li>Switch to @adobe&#x2F;css-tools (<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/commit/2d64661e5d71348b71d32488f6dc8044fefe1b8b">2d64661</a>)</li>
-<li>Update dependency eslint to v8.42.0 by @renovate in <a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/pull/656">https://github.com/next-theme/hexo-theme-next/pull/656</a></li>
-<li>Update dependency c8 to v7.14.0 by @renovate in <a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/pull/659">https://github.com/next-theme/hexo-theme-next/pull/659</a></li>
-</ul>
-<h2 id="New-Contributors"><a href="#New-Contributors" class="headerlink" title="New Contributors"></a>New Contributors</h2><ul>
-<li>@r12f made their first contribution in <a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/pull/655">https://github.com/next-theme/hexo-theme-next/pull/655</a></li>
-</ul>
-<p><strong>Full Changelog</strong>: <a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/compare/v8.16.0...v8.17.0">https://github.com/next-theme/hexo-theme-next/compare/v8.16.0...v8.17.0</a></p>
-<p><a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/releases/tag/v8.17.0">Detailed changes for NexT v8.17.0</a></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/19/">19</a><a class="extend next" rel="next" title="Next page" aria-label="Next page" href="/page/2/"><i class="fa fa-angle-right"></i></a>
-  </nav>
 
 </div>
   </main>
