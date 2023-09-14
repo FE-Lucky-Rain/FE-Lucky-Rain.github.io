@@ -21,33 +21,32 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"www.feacat.com","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.18.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.18.0/config.min.js"></script>
 
-    <meta name="description" content="ROTA User Docs – Geometry test – Surface2D">
+    <meta name="description" content="ROTA User Docs – Mesh test – Mesh">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Surface2D">
-<meta property="og:url" content="http://www.feacat.com/docs/Geometry/Surface2D.html">
+<meta property="og:title" content="Mesh">
+<meta property="og:url" content="http://www.feacat.com/docs/Mesh/Mesh.html">
 <meta property="og:site_name" content="ROTA">
-<meta property="og:description" content="ROTA User Docs – Geometry test – Surface2D">
+<meta property="og:description" content="ROTA User Docs – Mesh test – Mesh">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://www.feacat.com/images/Surface2D.assets/1.png">
-<meta property="og:image" content="http://www.feacat.com/images/Surface2D.assets/2.png">
-<meta property="og:image" content="http://www.feacat.com/images/Surface2D.assets/3.png">
-<meta property="og:image" content="http://www.feacat.com/images/Surface2D.assets/4.png">
-<meta property="article:published_time" content="2023-09-14T06:48:35.311Z">
-<meta property="article:modified_time" content="2023-09-10T02:43:55.481Z">
+<meta property="og:image" content="http://www.feacat.com/images/Mesh.assets/1.png">
+<meta property="og:image" content="http://www.feacat.com/images/Mesh.assets/2.png">
+<meta property="og:image" content="http://www.feacat.com/images/Mesh.assets/3.png">
+<meta property="article:published_time" content="2023-09-14T06:47:36.003Z">
+<meta property="article:modified_time" content="2023-09-14T06:47:31.482Z">
 <meta property="article:author" content="FECat">
 <meta property="article:tag" content="Mesh, FEA, MBD, Simulink">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://www.feacat.com/images/Surface2D.assets/1.png">
+<meta name="twitter:image" content="http://www.feacat.com/images/Mesh.assets/1.png">
 
 
-<link rel="canonical" href="http://www.feacat.com/docs/Geometry/Surface2D">
+<link rel="canonical" href="http://www.feacat.com/docs/Mesh/Mesh">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":true,"permalink":"http://www.feacat.com/docs/Geometry/Surface2D.html","path":"docs/Geometry/Surface2D.html","title":"Surface2D"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":true,"permalink":"http://www.feacat.com/docs/Mesh/Mesh.html","path":"docs/Mesh/Mesh.html","title":"Mesh"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Surface2D | ROTA
+<title>Mesh | ROTA
 </title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-43861RVV8R"></script>
@@ -152,7 +151,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Introduction"><span class="nav-number">1.</span> <span class="nav-text">Introduction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Examples"><span class="nav-number">2.</span> <span class="nav-text">Examples</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Create-Surface-form-Line2D"><span class="nav-number">2.1.</span> <span class="nav-text">Create Surface form Line2D</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#AddHole"><span class="nav-number">2.2.</span> <span class="nav-text">AddHole</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Cheat-Sheet"><span class="nav-number">3.</span> <span class="nav-text">Cheat Sheet</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Introduction"><span class="nav-number">1.</span> <span class="nav-text">Introduction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Examples"><span class="nav-number">2.</span> <span class="nav-text">Examples</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Meshcube"><span class="nav-number">2.1.</span> <span class="nav-text">Meshcube</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Cheat-Sheet"><span class="nav-number">3.</span> <span class="nav-text">Cheat Sheet</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Reference"><span class="nav-number">4.</span> <span class="nav-text">Reference</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -219,15 +218,11 @@
     </ul>
     <ul class="sub-menu menu">
       
-  <li class="menu-item menu-item-point2d"><a href="/docs/Geometry/Point2D.html" rel="section"><i class="fa fa-bars fa-fw"></i>Point2D</a></li>
+  <li class="menu-item menu-item-mesh2d"><a href="/docs/Mesh/Mesh2D.html" rel="section"><i class="fa fa-paw fa-fw"></i>Mesh2D</a></li>
 
 
       
-  <li class="menu-item menu-item-line2d"><a href="/docs/Geometry/Line2D.html" rel="section"><i class="fa fa-sticky-note fa-fw"></i>Line2D</a></li>
-
-
-      
-  <li class="menu-item menu-item-surface2d"><a href="/docs/Geometry/Surface2D.html" rel="section"><i class="fa fa-edit fa-fw"></i>Surface2D</a></li>
+  <li class="menu-item menu-item-mesh"><a href="/docs/Mesh/Mesh.html" rel="section"><i class="fa fa-fish fa-fw"></i>Mesh</a></li>
 
 
     </ul>
@@ -238,15 +233,15 @@
     
     <div class="post-block" lang="en"><header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">Surface2D
+<h1 class="post-title" itemprop="name headline">Mesh
 </h1>
 
 <div class="post-meta-container">
-    <div class="post-description">ROTA User Docs – Geometry test – Surface2D</div>
+    <div class="post-description">ROTA User Docs – Mesh test – Mesh</div>
   <ul class="breadcrumb">
             <li><a href="/docs/">DOCS</a></li>
-            <li><a href="/docs/Geometry/">GEOMETRY TEST</a></li>
-            <li>SURFACE2D</li>
+            <li><a href="/docs/Mesh/">MESH TEST</a></li>
+            <li>MESH</li>
   </ul>
 </div>
 
@@ -255,21 +250,20 @@
       
       
       <div class="post-body">
-          <h3 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h3><p><strong>Surface2D</strong> is an object responsible for importing and creating 2D surfaces. </p>
-<h3 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h3><h4 id="Create-Surface-form-Line2D"><a href="#Create-Surface-form-Line2D" class="headerlink" title="Create Surface form Line2D"></a>Create Surface form Line2D</h4><figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">a=Point2D(<span class="string">&#x27;Point Ass1&#x27;</span>);</span><br><span class="line">neg=<span class="number">8</span>;</span><br><span class="line">OR1=<span class="number">2.5</span>;OR2=<span class="number">2</span>;IR=<span class="number">1</span>;</span><br><span class="line">D_theta=<span class="number">3</span>/<span class="number">180</span>*<span class="built_in">pi</span>;</span><br><span class="line">AddPoint(a,<span class="number">0</span>,<span class="number">0</span>);</span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span>=<span class="number">1</span>:neg</span><br><span class="line">  x1=OR1*<span class="built_in">cos</span>(<span class="built_in">pi</span>/neg/<span class="number">2</span>-D_theta-<span class="built_in">pi</span>/neg*<span class="number">2</span>*(<span class="built_in">i</span><span class="number">-1</span>));</span><br><span class="line">  y1=OR1*<span class="built_in">sin</span>(<span class="built_in">pi</span>/neg/<span class="number">2</span>-D_theta-<span class="built_in">pi</span>/neg*<span class="number">2</span>*(<span class="built_in">i</span><span class="number">-1</span>));</span><br><span class="line">  x2=OR1*<span class="built_in">cos</span>(-<span class="built_in">pi</span>/neg/<span class="number">2</span>+D_theta-<span class="built_in">pi</span>/neg*<span class="number">2</span>*(<span class="built_in">i</span><span class="number">-1</span>));</span><br><span class="line">  y2=OR1*<span class="built_in">sin</span>(-<span class="built_in">pi</span>/neg/<span class="number">2</span>+D_theta-<span class="built_in">pi</span>/neg*<span class="number">2</span>*(<span class="built_in">i</span><span class="number">-1</span>));</span><br><span class="line">  x3=OR2*<span class="built_in">cos</span>(-<span class="built_in">pi</span>/neg/<span class="number">2</span>-<span class="built_in">pi</span>/neg*<span class="number">2</span>*(<span class="built_in">i</span><span class="number">-1</span>));</span><br><span class="line">  y3=OR2*<span class="built_in">sin</span>(-<span class="built_in">pi</span>/neg/<span class="number">2</span>-<span class="built_in">pi</span>/neg*<span class="number">2</span>*(<span class="built_in">i</span><span class="number">-1</span>));</span><br><span class="line">  x4=OR2*<span class="built_in">cos</span>(-<span class="built_in">pi</span>/neg/<span class="number">2</span>*<span class="number">3</span>-<span class="built_in">pi</span>/neg*<span class="number">2</span>*(<span class="built_in">i</span><span class="number">-1</span>));</span><br><span class="line">  y4=OR2*<span class="built_in">sin</span>(-<span class="built_in">pi</span>/neg/<span class="number">2</span>*<span class="number">3</span>-<span class="built_in">pi</span>/neg*<span class="number">2</span>*(<span class="built_in">i</span><span class="number">-1</span>));</span><br><span class="line">  x5=OR1*<span class="built_in">cos</span>(<span class="built_in">pi</span>/neg/<span class="number">2</span>-D_theta-<span class="built_in">pi</span>/neg*<span class="number">2</span>*<span class="built_in">i</span>);</span><br><span class="line">  y5=OR1*<span class="built_in">sin</span>(<span class="built_in">pi</span>/neg/<span class="number">2</span>-D_theta-<span class="built_in">pi</span>/neg*<span class="number">2</span>*<span class="built_in">i</span>);</span><br><span class="line">  xx=[x1;x2];yy=[y1;y2];</span><br><span class="line">  AddPoint(a,xx,yy);</span><br><span class="line">  xx=[x2;x3];yy=[y2;y3];</span><br><span class="line">  AddPoint(a,xx,yy);</span><br><span class="line">  xx=[x3;x4];yy=[y3;y4];</span><br><span class="line">  AddPoint(a,xx,yy);</span><br><span class="line">  xx=[x4;x5];yy=[y4;y5];</span><br><span class="line">  AddPoint(a,xx,yy);</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">Plot(a);</span><br><span class="line">b=Line2D(<span class="string">&#x27;Line Ass1&#x27;</span>);</span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span>=<span class="number">1</span>:neg</span><br><span class="line">  AddLine(b,a,<span class="number">2</span>+(<span class="built_in">i</span><span class="number">-1</span>)*<span class="number">4</span>);</span><br><span class="line">  AddLine(b,a,<span class="number">3</span>+(<span class="built_in">i</span><span class="number">-1</span>)*<span class="number">4</span>);</span><br><span class="line">  AddCircle(b,OR2,a,<span class="number">1</span>,<span class="string">&#x27;sang&#x27;</span>,<span class="number">-180</span>/neg/<span class="number">2</span><span class="number">-180</span>/neg*<span class="number">2</span>*(<span class="built_in">i</span><span class="number">-1</span>),<span class="string">&#x27;ang&#x27;</span>,<span class="number">-180</span>/neg);</span><br><span class="line">  AddLine(b,a,<span class="number">5</span>+(<span class="built_in">i</span><span class="number">-1</span>)*<span class="number">4</span>);</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">Plot(b);</span><br><span class="line">S=Surface2D(b);</span><br><span class="line">Plot(S);</span><br></pre></td></tr></table></figure>
+          <h3 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h3><p><strong>Mesh</strong> is an object responsible for importing and creating single 3D Meshes.  </p>
+<h3 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h3><h4 id="Meshcube"><a href="#Meshcube" class="headerlink" title="Meshcube"></a>Meshcube</h4><figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line"><span class="comment">%% Specifying dimensions and number of elements</span></span><br><span class="line">m=Mesh(<span class="string">&#x27;Mesh&#x27;</span>);</span><br><span class="line"><span class="comment">%% Create a box with hexahedral elements</span></span><br><span class="line">cubeDimensions=[<span class="number">10</span> <span class="number">10</span> <span class="number">10</span>]; <span class="comment">%Dimensions</span></span><br><span class="line">cubeElementNumbers=[<span class="number">5</span> <span class="number">5</span> <span class="number">5</span>]; <span class="comment">%Number of elements</span></span><br><span class="line">outputStructType=<span class="number">2</span>;</span><br><span class="line">m=Meshcube(m,cubeDimensions,cubeElementNumbers,outputStructType);</span><br><span class="line"><span class="comment">%% Plot elements</span></span><br><span class="line">PlotFace(m,<span class="string">&#x27;face_alpha&#x27;</span>,<span class="number">1</span>);</span><br><span class="line"><span class="built_in">sec</span>.pos=[<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>];</span><br><span class="line"><span class="built_in">sec</span>.vec=[<span class="number">1</span>,<span class="number">0</span>,<span class="number">0</span>];</span><br><span class="line">PlotElement(m,<span class="string">&#x27;section&#x27;</span>,<span class="built_in">sec</span>);</span><br><span class="line"><span class="built_in">sec</span>.vec=[<span class="number">1</span>,<span class="number">1</span>,<span class="number">-1</span>];</span><br><span class="line">PlotElement(m,<span class="string">&#x27;section&#x27;</span>,<span class="built_in">sec</span>);</span><br></pre></td></tr></table></figure>
+<p><img src="../../images/Mesh.assets/1.png" alt=""></p>
+<p>You can define the section position and vector to see the section view of elements.</p>
 <table style="border:none;text-align:center;width:auto;margin: 0 auto;">
     <tbody>
         <tr>
             <td style="padding: 6px">
-      <img src="..\..\images\Surface2D.assets\1.png" style="zoom: 100%;"></td>
-      <td><img src="..\..\images\Surface2D.assets\2.png" style="zoom: 100%;"></td>
+      <img src="..\..\images\Mesh.assets\2.png" style="zoom: 100%;"></td>
+      <td><img src="..\..\images\Mesh.assets\3.png" style="zoom: 100%;"></td>
     </tbody>
 </table>
 
-<p><img src="../../images/Surface2D.assets/3.png" alt=""></p>
-<h4 id="AddHole"><a href="#AddHole" class="headerlink" title="AddHole"></a>AddHole</h4><p>You can add holes at the surface.</p>
-<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">a1=Point2D(<span class="string">&#x27;Point Group2&#x27;</span>);</span><br><span class="line">AddPoint(a1,<span class="number">0</span>,<span class="number">0</span>);</span><br><span class="line">h=Line2D(<span class="string">&#x27;Hole Group1&#x27;</span>);</span><br><span class="line">AddCircle(h,IR,a1,<span class="number">1</span>);</span><br><span class="line">AddHole(S,h);</span><br><span class="line">Plot(S);</span><br></pre></td></tr></table></figure>
-<p><img src="../../images/Surface2D.assets/4.png" alt=""></p>
+
 <h3 id="Cheat-Sheet"><a href="#Cheat-Sheet" class="headerlink" title="Cheat Sheet"></a>Cheat Sheet</h3><div class="table-container">
 <table>
 <thead>
@@ -281,28 +275,38 @@
 </thead>
 <tbody>
 <tr>
-<td>Surface2D(Line2D,varargin)</td>
-<td>Creat Surface2D object</td>
+<td>Mesh(‘Name’)</td>
+<td>Create Mesh object</td>
 <td>‘Echo’</td>
 </tr>
 <tr>
-<td>GetNface(obj)</td>
-<td>Get the number of the faces</td>
+<td></td>
+<td></td>
 <td></td>
 </tr>
 <tr>
-<td>AddHole(obj,Line2D)</td>
-<td>Add hole to the surface</td>
+<td></td>
+<td></td>
 <td></td>
 </tr>
 <tr>
-<td>Plot(obj,varargin)</td>
-<td>Plot surfaces</td>
-<td>‘face’, ‘axe’, ‘equal’, ‘grid’,’color’</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
 </tr>
 </tbody>
 </table>
 </div>
+<h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><p>[1] <a target="_blank" rel="noopener" href="https://www.mathworks.com/matlabcentral/fileexchange/48208-gibboncode-gibbon?s_tid=srchtitle">https://www.mathworks.com/matlabcentral/fileexchange/48208-gibboncode-gibbon?s_tid=srchtitle</a></p>
 
       </div>
       
@@ -311,8 +315,8 @@
     </div>
   <ul class="breadcrumb">
             <li><a href="/docs/">DOCS</a></li>
-            <li><a href="/docs/Geometry/">GEOMETRY TEST</a></li>
-            <li>SURFACE2D</li>
+            <li><a href="/docs/Mesh/">MESH TEST</a></li>
+            <li>MESH</li>
   </ul>
 
     

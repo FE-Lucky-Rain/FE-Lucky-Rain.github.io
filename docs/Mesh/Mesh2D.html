@@ -21,18 +21,20 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"www.feacat.com","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.18.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.18.0/config.min.js"></script>
 
-    <meta name="description" content="ROTA User Docs – Geometry test – Mesh2D">
+    <meta name="description" content="ROTA User Docs – Mesh test – Mesh2D">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Mesh2D">
 <meta property="og:url" content="http://www.feacat.com/docs/Mesh/Mesh2D.html">
 <meta property="og:site_name" content="ROTA">
-<meta property="og:description" content="ROTA User Docs – Geometry test – Mesh2D">
+<meta property="og:description" content="ROTA User Docs – Mesh test – Mesh2D">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://www.feacat.com/images/Mesh2D.assets/1.png">
 <meta property="og:image" content="http://www.feacat.com/images/Mesh2D.assets/2.png">
 <meta property="og:image" content="http://www.feacat.com/images/Mesh2D.assets/3.png">
-<meta property="article:published_time" content="2023-09-10T23:49:30.707Z">
-<meta property="article:modified_time" content="2023-09-10T04:15:26.964Z">
+<meta property="og:image" content="http://www.feacat.com/images/Mesh2D.assets/4.png">
+<meta property="og:image" content="http://www.feacat.com/images/Mesh2D.assets/5.png">
+<meta property="article:published_time" content="2023-09-14T06:45:40.662Z">
+<meta property="article:modified_time" content="2023-09-14T03:12:36.894Z">
 <meta property="article:author" content="FECat">
 <meta property="article:tag" content="Mesh, FEA, MBD, Simulink">
 <meta name="twitter:card" content="summary">
@@ -151,7 +153,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#introduction"><span class="nav-number">1.</span> <span class="nav-text">Introduction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#examples"><span class="nav-number">2.</span> <span class="nav-text">Examples</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#create-gear"><span class="nav-number">2.1.</span> <span class="nav-text">Create gear</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#meshquadcircle"><span class="nav-number">2.2.</span> <span class="nav-text">Meshquadcircle</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#cheat-sheet"><span class="nav-number">3.</span> <span class="nav-text">Cheat Sheet</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#reference"><span class="nav-number">4.</span> <span class="nav-text">Reference</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Introduction"><span class="nav-number">1.</span> <span class="nav-text">Introduction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Examples"><span class="nav-number">2.</span> <span class="nav-text">Examples</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Create-gear"><span class="nav-number">2.1.</span> <span class="nav-text">Create gear</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Meshquadcircle"><span class="nav-number">2.2.</span> <span class="nav-text">Meshquadcircle</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Meshquadplate"><span class="nav-number">2.3.</span> <span class="nav-text">Meshquadplate</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Cheat-Sheet"><span class="nav-number">3.</span> <span class="nav-text">Cheat Sheet</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Reference"><span class="nav-number">4.</span> <span class="nav-text">Reference</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -237,7 +239,7 @@
 </h1>
 
 <div class="post-meta-container">
-    <div class="post-description">ROTA User Docs – Geometry test – Mesh2D</div>
+    <div class="post-description">ROTA User Docs – Mesh test – Mesh2D</div>
   <ul class="breadcrumb">
             <li><a href="/docs/">DOCS</a></li>
             <li><a href="/docs/Mesh/">MESH TEST</a></li>
@@ -250,78 +252,65 @@
       
       
       <div class="post-body">
-          <h3 id="introduction">Introduction</h3>
-<p><strong>Mesh2D</strong> is an object responsible for importing and
-creating 2D Meshes.</p>
-<h3 id="examples">Examples</h3>
-<h4 id="create-gear">Create gear</h4>
-<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">a=Point2D(<span class="string">&#x27;Point Ass1&#x27;</span>);</span><br><span class="line">neg=<span class="number">8</span>;</span><br><span class="line">OR1=<span class="number">2.5</span>;OR2=<span class="number">2</span>;IR=<span class="number">1</span>;</span><br><span class="line">D_theta=<span class="number">3</span>/<span class="number">180</span>*<span class="built_in">pi</span>;</span><br><span class="line">AddPoint(a,<span class="number">0</span>,<span class="number">0</span>);</span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span>=<span class="number">1</span>:neg</span><br><span class="line">  x1=OR1*<span class="built_in">cos</span>(<span class="built_in">pi</span>/neg/<span class="number">2</span>-D_theta-<span class="built_in">pi</span>/neg*<span class="number">2</span>*(<span class="built_in">i</span><span class="number">-1</span>));</span><br><span class="line">  y1=OR1*<span class="built_in">sin</span>(<span class="built_in">pi</span>/neg/<span class="number">2</span>-D_theta-<span class="built_in">pi</span>/neg*<span class="number">2</span>*(<span class="built_in">i</span><span class="number">-1</span>));</span><br><span class="line">  x2=OR1*<span class="built_in">cos</span>(-<span class="built_in">pi</span>/neg/<span class="number">2</span>+D_theta-<span class="built_in">pi</span>/neg*<span class="number">2</span>*(<span class="built_in">i</span><span class="number">-1</span>));</span><br><span class="line">  y2=OR1*<span class="built_in">sin</span>(-<span class="built_in">pi</span>/neg/<span class="number">2</span>+D_theta-<span class="built_in">pi</span>/neg*<span class="number">2</span>*(<span class="built_in">i</span><span class="number">-1</span>));</span><br><span class="line">  x3=OR2*<span class="built_in">cos</span>(-<span class="built_in">pi</span>/neg/<span class="number">2</span>-<span class="built_in">pi</span>/neg*<span class="number">2</span>*(<span class="built_in">i</span><span class="number">-1</span>));</span><br><span class="line">  y3=OR2*<span class="built_in">sin</span>(-<span class="built_in">pi</span>/neg/<span class="number">2</span>-<span class="built_in">pi</span>/neg*<span class="number">2</span>*(<span class="built_in">i</span><span class="number">-1</span>));</span><br><span class="line">  x4=OR2*<span class="built_in">cos</span>(-<span class="built_in">pi</span>/neg/<span class="number">2</span>*<span class="number">3</span>-<span class="built_in">pi</span>/neg*<span class="number">2</span>*(<span class="built_in">i</span><span class="number">-1</span>));</span><br><span class="line">  y4=OR2*<span class="built_in">sin</span>(-<span class="built_in">pi</span>/neg/<span class="number">2</span>*<span class="number">3</span>-<span class="built_in">pi</span>/neg*<span class="number">2</span>*(<span class="built_in">i</span><span class="number">-1</span>));</span><br><span class="line">  x5=OR1*<span class="built_in">cos</span>(<span class="built_in">pi</span>/neg/<span class="number">2</span>-D_theta-<span class="built_in">pi</span>/neg*<span class="number">2</span>*<span class="built_in">i</span>);</span><br><span class="line">  y5=OR1*<span class="built_in">sin</span>(<span class="built_in">pi</span>/neg/<span class="number">2</span>-D_theta-<span class="built_in">pi</span>/neg*<span class="number">2</span>*<span class="built_in">i</span>);</span><br><span class="line">  xx=[x1;x2];yy=[y1;y2];</span><br><span class="line">  AddPoint(a,xx,yy);</span><br><span class="line">  xx=[x2;x3];yy=[y2;y3];</span><br><span class="line">  AddPoint(a,xx,yy);</span><br><span class="line">  xx=[x3;x4];yy=[y3;y4];</span><br><span class="line">  AddPoint(a,xx,yy);</span><br><span class="line">  xx=[x4;x5];yy=[y4;y5];</span><br><span class="line">  AddPoint(a,xx,yy);</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">b=Line2D(<span class="string">&#x27;Line Ass1&#x27;</span>);</span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span>=<span class="number">1</span>:neg</span><br><span class="line">  AddLine(b,a,<span class="number">2</span>+(<span class="built_in">i</span><span class="number">-1</span>)*<span class="number">4</span>);</span><br><span class="line">  AddLine(b,a,<span class="number">3</span>+(<span class="built_in">i</span><span class="number">-1</span>)*<span class="number">4</span>);</span><br><span class="line">  AddCircle(b,OR2,a,<span class="number">1</span>,<span class="string">&#x27;sang&#x27;</span>,<span class="number">-180</span>/neg/<span class="number">2</span><span class="number">-180</span>/neg*<span class="number">2</span>*(<span class="built_in">i</span><span class="number">-1</span>),<span class="string">&#x27;ang&#x27;</span>,<span class="number">-180</span>/neg);</span><br><span class="line">  AddLine(b,a,<span class="number">5</span>+(<span class="built_in">i</span><span class="number">-1</span>)*<span class="number">4</span>);</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">S=Surface2D(b);</span><br><span class="line">a1=Point2D(<span class="string">&#x27;Point Group2&#x27;</span>);</span><br><span class="line">AddPoint(a1,<span class="number">0</span>,<span class="number">0</span>);</span><br><span class="line">h=Line2D(<span class="string">&#x27;Hole Group1&#x27;</span>);</span><br><span class="line">AddCircle(h,IR,a1,<span class="number">1</span>);</span><br><span class="line">AddHole(S,h);</span><br><span class="line">m=Mesh2D(<span class="string">&#x27;Mesh1&#x27;</span>);</span><br><span class="line">m=AddSurface(m,S);</span><br><span class="line">m=SetSize(m,<span class="number">0.2</span>);</span><br><span class="line">m=Mesh(m);</span><br><span class="line">Plot(m);</span><br></pre></td></tr></table></figure>
-<p><img src="../../images/Mesh2D.assets/1.png" /></p>
-<h4 id="meshquadcircle">Meshquadcircle</h4>
-<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">m=Mesh2D(<span class="string">&#x27;Mesh1&#x27;</span>);</span><br><span class="line">m=MeshQuadCircle(m,<span class="string">&#x27;n&#x27;</span>,<span class="number">16</span>);</span><br><span class="line">Plot(m);</span><br></pre></td></tr></table></figure>
-<table style="border:none;text-align:center;width:auto;margin: 0 auto;">
-<tbody>
-<tr>
-<td style="padding: 6px">
-<img src="..\..\images\Mesh2D.assets\2.png" style="zoom: 100%;">
-</td>
-<td>
-<img src="..\..\images\Mesh2D.assets\3.png" style="zoom: 100%;">
-</td>
-</tbody>
-</table>
-<h3 id="cheat-sheet">Cheat Sheet</h3>
+          <h3 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h3><p><strong>Mesh2D</strong> is an object responsible for importing and creating 2D Meshes. </p>
+<h3 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h3><h4 id="Create-gear"><a href="#Create-gear" class="headerlink" title="Create gear"></a>Create gear</h4><figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">a=Point2D(<span class="string">&#x27;Point Ass1&#x27;</span>);</span><br><span class="line">neg=<span class="number">8</span>;</span><br><span class="line">OR1=<span class="number">2.5</span>;OR2=<span class="number">2</span>;IR=<span class="number">1</span>;</span><br><span class="line">D_theta=<span class="number">3</span>/<span class="number">180</span>*<span class="built_in">pi</span>;</span><br><span class="line">AddPoint(a,<span class="number">0</span>,<span class="number">0</span>);</span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span>=<span class="number">1</span>:neg</span><br><span class="line">  x1=OR1*<span class="built_in">cos</span>(<span class="built_in">pi</span>/neg/<span class="number">2</span>-D_theta-<span class="built_in">pi</span>/neg*<span class="number">2</span>*(<span class="built_in">i</span><span class="number">-1</span>));</span><br><span class="line">  y1=OR1*<span class="built_in">sin</span>(<span class="built_in">pi</span>/neg/<span class="number">2</span>-D_theta-<span class="built_in">pi</span>/neg*<span class="number">2</span>*(<span class="built_in">i</span><span class="number">-1</span>));</span><br><span class="line">  x2=OR1*<span class="built_in">cos</span>(-<span class="built_in">pi</span>/neg/<span class="number">2</span>+D_theta-<span class="built_in">pi</span>/neg*<span class="number">2</span>*(<span class="built_in">i</span><span class="number">-1</span>));</span><br><span class="line">  y2=OR1*<span class="built_in">sin</span>(-<span class="built_in">pi</span>/neg/<span class="number">2</span>+D_theta-<span class="built_in">pi</span>/neg*<span class="number">2</span>*(<span class="built_in">i</span><span class="number">-1</span>));</span><br><span class="line">  x3=OR2*<span class="built_in">cos</span>(-<span class="built_in">pi</span>/neg/<span class="number">2</span>-<span class="built_in">pi</span>/neg*<span class="number">2</span>*(<span class="built_in">i</span><span class="number">-1</span>));</span><br><span class="line">  y3=OR2*<span class="built_in">sin</span>(-<span class="built_in">pi</span>/neg/<span class="number">2</span>-<span class="built_in">pi</span>/neg*<span class="number">2</span>*(<span class="built_in">i</span><span class="number">-1</span>));</span><br><span class="line">  x4=OR2*<span class="built_in">cos</span>(-<span class="built_in">pi</span>/neg/<span class="number">2</span>*<span class="number">3</span>-<span class="built_in">pi</span>/neg*<span class="number">2</span>*(<span class="built_in">i</span><span class="number">-1</span>));</span><br><span class="line">  y4=OR2*<span class="built_in">sin</span>(-<span class="built_in">pi</span>/neg/<span class="number">2</span>*<span class="number">3</span>-<span class="built_in">pi</span>/neg*<span class="number">2</span>*(<span class="built_in">i</span><span class="number">-1</span>));</span><br><span class="line">  x5=OR1*<span class="built_in">cos</span>(<span class="built_in">pi</span>/neg/<span class="number">2</span>-D_theta-<span class="built_in">pi</span>/neg*<span class="number">2</span>*<span class="built_in">i</span>);</span><br><span class="line">  y5=OR1*<span class="built_in">sin</span>(<span class="built_in">pi</span>/neg/<span class="number">2</span>-D_theta-<span class="built_in">pi</span>/neg*<span class="number">2</span>*<span class="built_in">i</span>);</span><br><span class="line">  xx=[x1;x2];yy=[y1;y2];</span><br><span class="line">  AddPoint(a,xx,yy);</span><br><span class="line">  xx=[x2;x3];yy=[y2;y3];</span><br><span class="line">  AddPoint(a,xx,yy);</span><br><span class="line">  xx=[x3;x4];yy=[y3;y4];</span><br><span class="line">  AddPoint(a,xx,yy);</span><br><span class="line">  xx=[x4;x5];yy=[y4;y5];</span><br><span class="line">  AddPoint(a,xx,yy);</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">b=Line2D(<span class="string">&#x27;Line Ass1&#x27;</span>);</span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span>=<span class="number">1</span>:neg</span><br><span class="line">  AddLine(b,a,<span class="number">2</span>+(<span class="built_in">i</span><span class="number">-1</span>)*<span class="number">4</span>);</span><br><span class="line">  AddLine(b,a,<span class="number">3</span>+(<span class="built_in">i</span><span class="number">-1</span>)*<span class="number">4</span>);</span><br><span class="line">  AddCircle(b,OR2,a,<span class="number">1</span>,<span class="string">&#x27;sang&#x27;</span>,<span class="number">-180</span>/neg/<span class="number">2</span><span class="number">-180</span>/neg*<span class="number">2</span>*(<span class="built_in">i</span><span class="number">-1</span>),<span class="string">&#x27;ang&#x27;</span>,<span class="number">-180</span>/neg);</span><br><span class="line">  AddLine(b,a,<span class="number">5</span>+(<span class="built_in">i</span><span class="number">-1</span>)*<span class="number">4</span>);</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">S=Surface2D(b);</span><br><span class="line">a1=Point2D(<span class="string">&#x27;Point Group2&#x27;</span>);</span><br><span class="line">AddPoint(a1,<span class="number">0</span>,<span class="number">0</span>);</span><br><span class="line">h=Line2D(<span class="string">&#x27;Hole Group1&#x27;</span>);</span><br><span class="line">AddCircle(h,IR,a1,<span class="number">1</span>);</span><br><span class="line">AddHole(S,h);</span><br><span class="line">m=Mesh2D(<span class="string">&#x27;Mesh1&#x27;</span>);</span><br><span class="line">m=AddSurface(m,S);</span><br><span class="line">m=SetSize(m,<span class="number">0.2</span>);</span><br><span class="line">m=Mesh(m);</span><br><span class="line">Plot(m);</span><br></pre></td></tr></table></figure>
+<p><img src="../../images/Mesh2D.assets/1.png" alt=""></p>
+<h4 id="Meshquadcircle"><a href="#Meshquadcircle" class="headerlink" title="Meshquadcircle"></a>Meshquadcircle</h4><figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">m=Mesh2D(<span class="string">&#x27;Mesh1&#x27;</span>);</span><br><span class="line">m=MeshQuadCircle(m,<span class="string">&#x27;n&#x27;</span>,<span class="number">16</span>);</span><br><span class="line">Plot(m);</span><br></pre></td></tr></table></figure>
+<p><table style="border:none;text-align:center;width:auto;margin: 0 auto;">
+    <tbody>
+        <tr>
+            <td style="padding: 6px">
+      <img src="..\..\images\Mesh2D.assets\2.png" style="zoom: 100%;"></td>
+      <td><img src="..\..\images\Mesh2D.assets\3.png" style="zoom: 100%;"></td>
+    </tbody>
+</table><br><figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">m=SmoothFace(m,<span class="number">100</span>);</span><br><span class="line">Plot(m);</span><br></pre></td></tr></table></figure><br>Using <strong>SmoothFace</strong> to get smooth boundary.</p>
+<p><img src="../../images/Mesh2D.assets/4.png" alt=""></p>
+<h4 id="Meshquadplate"><a href="#Meshquadplate" class="headerlink" title="Meshquadplate"></a>Meshquadplate</h4><figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">m=Mesh2D(<span class="string">&#x27;Mesh1&#x27;</span>);</span><br><span class="line">m=MeshQuadPlate(m,[<span class="number">10</span>,<span class="number">10</span>]);</span><br><span class="line">Plot(m);</span><br></pre></td></tr></table></figure>
+<p><img src="../../images/Mesh2D.assets/5.png" alt=""></p>
+<h3 id="Cheat-Sheet"><a href="#Cheat-Sheet" class="headerlink" title="Cheat Sheet"></a>Cheat Sheet</h3><div class="table-container">
 <table>
-<colgroup>
-<col style="width: 38%" />
-<col style="width: 43%" />
-<col style="width: 18%" />
-</colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>Name</th>
 <th>Description</th>
 <th>Options</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td>Mesh2D('Name')</td>
+<tr>
+<td>Mesh2D(‘Name’)</td>
 <td>Create Mesh2D object</td>
-<td>'Echo'</td>
+<td>‘Echo’</td>
 </tr>
-<tr class="even">
+<tr>
 <td>AddSurface(obj,Surface2D)</td>
 <td>Add surface to Mesh2D object</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Mesh(obj)</td>
 <td>Create the mesh for the surface</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td>MeshQuadCircle(obj,varargin)</td>
 <td>Create quad circle</td>
-<td>'n', 'r', 'f'</td>
+<td>‘n’, ‘r’, ‘f’</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>SetSize(obj,edgesize)</td>
 <td>Set edge size</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td>WriteSTL(obj)</td>
 <td>Output .STL file</td>
-<td></td>
 </tr>
 </tbody>
 </table>
-<h3 id="reference">Reference</h3>
-<p>[1]
-https://www.mathworks.com/matlabcentral/fileexchange/72573-fem19?s_tid=srchtitle</p>
-<p>[2]
-https://www.mathworks.com/matlabcentral/fileexchange/48208-gibboncode-gibbon?s_tid=srchtitle</p>
+</div>
+<h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><p>[1] <a target="_blank" rel="noopener" href="https://www.mathworks.com/matlabcentral/fileexchange/72573-fem19?s_tid=srchtitle">https://www.mathworks.com/matlabcentral/fileexchange/72573-fem19?s_tid=srchtitle</a></p>
+<p>[2] <a target="_blank" rel="noopener" href="https://www.mathworks.com/matlabcentral/fileexchange/48208-gibboncode-gibbon?s_tid=srchtitle">https://www.mathworks.com/matlabcentral/fileexchange/48208-gibboncode-gibbon?s_tid=srchtitle</a></p>
 
       </div>
       
