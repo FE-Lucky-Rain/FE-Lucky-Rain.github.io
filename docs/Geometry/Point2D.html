@@ -34,7 +34,7 @@
 <meta property="og:image" content="http://www.feacat.com/images/Point2D.assets/2.png">
 <meta property="og:image" content="http://www.feacat.com/images/Point2D.assets/3.png">
 <meta property="og:image" content="http://www.feacat.com/images/Point2D.assets/4.png">
-<meta property="article:published_time" content="2023-09-18T13:57:11.586Z">
+<meta property="article:published_time" content="2023-09-19T15:56:35.877Z">
 <meta property="article:modified_time" content="2023-09-10T02:44:34.310Z">
 <meta property="article:author" content="FECat">
 <meta property="article:tag" content="Mesh, FEA, MBD, Simulink">
@@ -103,7 +103,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-bell fa-fw"></i>Home</a></li><li class="menu-item menu-item-docs"><a href="/docs/" rel="section"><i class="fa fa-book fa-fw"></i>Docs</a></li><li class="menu-item menu-item-theorys"><a href="/theory/" rel="section"><i class="fa fa-infinity fa-fw"></i>Theorys</a></li><li class="menu-item menu-item-demo"><a href="/Demo/" rel="section"><i class="fa fa-hammer fa-fw"></i>Demo</a></li><li class="menu-item menu-item-tools"><a href="/tools/" rel="section"><i class="fa fa-tools fa-fw"></i>Tools</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">5</span></a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-bell fa-fw"></i>Home</a></li><li class="menu-item menu-item-docs"><a href="/docs/" rel="section"><i class="fa fa-book fa-fw"></i>Docs</a></li><li class="menu-item menu-item-theorys"><a href="/theory/" rel="section"><i class="fa fa-infinity fa-fw"></i>Theorys</a></li><li class="menu-item menu-item-demo"><a href="/Demo/" rel="section"><i class="fa fa-hammer fa-fw"></i>Demo</a></li><li class="menu-item menu-item-tools"><a href="/tools/" rel="section"><i class="fa fa-tools fa-fw"></i>Tools</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">9</span></a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
         </a>
@@ -154,7 +154,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Introduction"><span class="nav-number">1.</span> <span class="nav-text">Introduction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Examples"><span class="nav-number">2.</span> <span class="nav-text">Examples</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Add-Points"><span class="nav-number">2.1.</span> <span class="nav-text">Add Points</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Compress-points"><span class="nav-number">2.2.</span> <span class="nav-text">Compress points</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Distance-calculate"><span class="nav-number">2.3.</span> <span class="nav-text">Distance calculate</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Cheat-sheet"><span class="nav-number">3.</span> <span class="nav-text">Cheat sheet</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#introduction"><span class="nav-number">1.</span> <span class="nav-text">Introduction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#examples"><span class="nav-number">2.</span> <span class="nav-text">Examples</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#add-points"><span class="nav-number">2.1.</span> <span class="nav-text">Add Points</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#compress-points"><span class="nav-number">2.2.</span> <span class="nav-text">Compress points</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#distance-calculate"><span class="nav-number">2.3.</span> <span class="nav-text">Distance calculate</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#cheat-sheet"><span class="nav-number">3.</span> <span class="nav-text">Cheat sheet</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -169,7 +169,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">9</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -257,86 +257,102 @@
       
       
       <div class="post-body">
-          <h3 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h3><p><strong>Point2D</strong> is an object responsible for importing and creating 2D point. </p>
-<h3 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h3><h4 id="Add-Points"><a href="#Add-Points" class="headerlink" title="Add Points"></a>Add Points</h4><p>You can add serval points using <strong>AddPoint</strong>.</p>
+          <h3 id="introduction">Introduction</h3>
+<p><strong>Point2D</strong> is an object responsible for importing and
+creating 2D point.</p>
+<h3 id="examples">Examples</h3>
+<h4 id="add-points">Add Points</h4>
+<p>You can add serval points using <strong>AddPoint</strong>.</p>
 <figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">x=[<span class="number">1</span>;<span class="number">2</span>];</span><br><span class="line">y=[<span class="number">1</span>;<span class="number">5</span>];</span><br><span class="line">a=Point2D(<span class="string">&#x27;Point Ass1&#x27;</span>);</span><br><span class="line">AddPoint(a,x,y);</span><br><span class="line">g1=Plot(a,<span class="string">&#x27;grid&#x27;</span>,<span class="number">1</span>,<span class="string">&#x27;plabel&#x27;</span>,<span class="number">1</span>);</span><br></pre></td></tr></table></figure>
-<p><img src="../../images/Point2D.assets/1.png" alt=""></p>
+<p><img src="../../images/Point2D.assets/1.png" /></p>
 <p>Add points at polar coordinate:</p>
 <figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">x1=[<span class="number">0</span>;<span class="number">10</span>;<span class="number">20</span>;<span class="number">30</span>;<span class="number">40</span>;<span class="number">50</span>;<span class="number">60</span>;<span class="number">70</span>;<span class="number">80</span>;<span class="number">90</span>];</span><br><span class="line">y1=<span class="built_in">ones</span>(<span class="number">10</span>,<span class="number">1</span>);</span><br><span class="line">a1=Point2D(<span class="string">&#x27;Point Ass2&#x27;</span>);</span><br><span class="line">AddPoint(a1,x1,y1,<span class="string">&#x27;polar&#x27;</span>,<span class="string">&#x27;deg&#x27;</span>)</span><br><span class="line">Plot(a1,<span class="string">&#x27;grid&#x27;</span>,<span class="number">1</span>,<span class="string">&#x27;plabel&#x27;</span>,<span class="number">1</span>);</span><br></pre></td></tr></table></figure>
-<p><img src="../../images/Point2D.assets/5.png" alt=""></p>
-<p>Add points incrementally using <strong>‘delta’</strong>:</p>
+<p><img src="../../images/Point2D.assets/5.png" /></p>
+<p>Add points incrementally using <strong>'delta'</strong>:</p>
 <figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">x2=<span class="built_in">ones</span>(<span class="number">10</span>,<span class="number">1</span>);</span><br><span class="line">y2=<span class="built_in">ones</span>(<span class="number">10</span>,<span class="number">1</span>);</span><br><span class="line">a2=Point2D(<span class="string">&#x27;Point Ass3&#x27;</span>);</span><br><span class="line">AddPoint(a2,x2,y2,<span class="string">&#x27;delta&#x27;</span>,<span class="number">1</span>)</span><br><span class="line">g6=Plot(a2,<span class="string">&#x27;grid&#x27;</span>,<span class="number">1</span>,<span class="string">&#x27;plabel&#x27;</span>,<span class="number">1</span>);</span><br></pre></td></tr></table></figure>
-<p><img src="../../images/Point2D.assets/6.png" alt=""></p>
-<p>Any time the points added to the Point2D object, will join a new group.</p>
+<p><img src="../../images/Point2D.assets/6.png" /></p>
+<p>Any time the points added to the Point2D object, will join a new
+group.</p>
 <figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">x1=<span class="number">-5</span> + (<span class="number">5</span>+<span class="number">5</span>)*<span class="built_in">rand</span>(<span class="number">10</span>,<span class="number">1</span>);</span><br><span class="line">y1=<span class="number">-5</span> + (<span class="number">5</span>+<span class="number">5</span>)*<span class="built_in">rand</span>(<span class="number">10</span>,<span class="number">1</span>);</span><br><span class="line">AddPoint(a,x1,y1);</span><br><span class="line">g2=Plot(a,<span class="string">&#x27;grid&#x27;</span>,<span class="number">1</span>,<span class="string">&#x27;plabel&#x27;</span>,<span class="number">1</span>,<span class="string">&#x27;group&#x27;</span>,[<span class="number">1</span>;<span class="number">2</span>]);</span><br></pre></td></tr></table></figure>
-<p><img src="../../images/Point2D.assets/2.png" alt=""></p>
-<h4 id="Compress-points"><a href="#Compress-points" class="headerlink" title="Compress points"></a>Compress points</h4><p>If points repeated,  you can use <strong>CompressNpts</strong>  to delete repeated points.</p>
+<p><img src="../../images/Point2D.assets/2.png" /></p>
+<h4 id="compress-points">Compress points</h4>
+<p>If points repeated, you can use <strong>CompressNpts</strong> to
+delete repeated points.</p>
 <figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">x2=[<span class="number">1</span>;<span class="number">2</span>;<span class="number">3</span>;<span class="number">4</span>;<span class="number">2</span>];</span><br><span class="line">y2=[<span class="number">2</span>;<span class="number">5</span>;<span class="number">3</span>;<span class="number">4</span>;<span class="number">5</span>];</span><br><span class="line">AddPoint(a,x2,y2);</span><br><span class="line">g3=Plot(a,<span class="string">&#x27;grid&#x27;</span>,<span class="number">1</span>,<span class="string">&#x27;plabel&#x27;</span>,<span class="number">1</span>);</span><br><span class="line">CompressNpts(a,<span class="string">&#x27;all&#x27;</span>,<span class="number">1</span>);</span><br><span class="line">g4=Plot(a,<span class="string">&#x27;grid&#x27;</span>,<span class="number">1</span>,<span class="string">&#x27;plabel&#x27;</span>,<span class="number">1</span>);</span><br></pre></td></tr></table></figure>
-<p><table style="border:none;text-align:center;width:auto;margin: 0 auto;">
-    <tbody>
-        <tr>
-            <td style="padding: 6px">
-      <img src="..\..\images\Point2D.assets\3.png" style="zoom: 100%;"></td>
-      <td><img src="..\..\images\Point2D.assets\4.png" style="zoom: 100%;"></td>
-    </tbody>
-</table></p>
-<h4 id="Distance-calculate"><a href="#Distance-calculate" class="headerlink" title="Distance calculate"></a>Distance calculate</h4><p><strong>Dist</strong> is function to calculate the distance between a single point to several points.</p>
+<table style="border:none;text-align:center;width:auto;margin: 0 auto;">
+<tbody>
+<tr>
+<td style="padding: 6px">
+<img src="..\..\images\Point2D.assets\3.png" style="zoom: 100%;">
+</td>
+<td>
+<img src="..\..\images\Point2D.assets\4.png" style="zoom: 100%;">
+</td>
+</tbody>
+</table>
+<h4 id="distance-calculate">Distance calculate</h4>
+<p><strong>Dist</strong> is function to calculate the distance between a
+single point to several points.</p>
 <figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">a=Point2D(<span class="string">&#x27;Point Ass1&#x27;</span>);</span><br><span class="line">x1=<span class="number">-5</span> + (<span class="number">5</span>+<span class="number">5</span>)*<span class="built_in">rand</span>(<span class="number">10</span>,<span class="number">1</span>);</span><br><span class="line">y1=<span class="number">-5</span> + (<span class="number">5</span>+<span class="number">5</span>)*<span class="built_in">rand</span>(<span class="number">10</span>,<span class="number">1</span>);</span><br><span class="line">x2=<span class="number">-5</span> + (<span class="number">5</span>+<span class="number">5</span>)*<span class="built_in">rand</span>(<span class="number">10</span>,<span class="number">1</span>);</span><br><span class="line">y2=<span class="number">-5</span> + (<span class="number">5</span>+<span class="number">5</span>)*<span class="built_in">rand</span>(<span class="number">10</span>,<span class="number">1</span>);</span><br><span class="line">AddPoint(a,x1,y1);</span><br><span class="line">AddPoint(a,x2,y2);</span><br><span class="line">dist=Dist(<span class="number">2</span>,<span class="number">1</span>,a,<span class="string">&#x27;group&#x27;</span>,<span class="number">1</span>);</span><br><span class="line">value=dist;</span><br></pre></td></tr></table></figure>
 <p>The results are shown below.</p>
 <figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line"><span class="number">6.16832418655882</span></span><br><span class="line"><span class="number">4.06315804123356</span></span><br><span class="line"><span class="number">8.11409557489179</span></span><br><span class="line"><span class="number">3.44441659301562</span></span><br><span class="line"><span class="number">4.69355796731468</span></span><br><span class="line"><span class="number">4.93649962864718</span></span><br><span class="line"><span class="number">6.71891004097793</span></span><br><span class="line"><span class="number">3.00902578181175</span></span><br><span class="line"><span class="number">4.42976366916723</span></span><br><span class="line"><span class="number">4.65918272225947</span></span><br></pre></td></tr></table></figure>
-<h3 id="Cheat-sheet"><a href="#Cheat-sheet" class="headerlink" title="Cheat sheet"></a>Cheat sheet</h3><div class="table-container">
+<h3 id="cheat-sheet">Cheat sheet</h3>
 <table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 42%" />
+<col style="width: 32%" />
+</colgroup>
 <thead>
-<tr>
+<tr class="header">
 <th>Name</th>
 <th>Description</th>
 <th>Options</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>Point2D(‘Name’)</td>
+<tr class="odd">
+<td>Point2D('Name')</td>
 <td>Creat Line2D object</td>
 <td></td>
 </tr>
-<tr>
+<tr class="even">
 <td>AddPoint(obj,x,y)</td>
 <td>Add points to Point2D</td>
-<td>‘polar’, ‘delta’</td>
+<td>'polar', 'delta'</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Plot(obj,varargin)</td>
 <td>Plot points</td>
-<td>‘plable’ , ‘grid’ , ‘group’,’equal’</td>
+<td>'plable' , 'grid' , 'group','equal'</td>
 </tr>
-<tr>
+<tr class="even">
 <td>GetPoint(obj,id,t)</td>
 <td>Get point data</td>
 <td></td>
 </tr>
-<tr>
+<tr class="odd">
 <td>GetNpts(obj)</td>
 <td>Get number of points</td>
 <td></td>
 </tr>
-<tr>
+<tr class="even">
 <td>GetNgpts(obj)</td>
 <td>Get number of points group</td>
 <td></td>
 </tr>
-<tr>
+<tr class="odd">
 <td>CompressNpts(obj,varargin)</td>
 <td>Compress repeated points</td>
-<td>‘all’</td>
+<td>'all'</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Dist(x,y,obj,varargin)</td>
 <td>Calculate the closet distance to serval points</td>
-<td>‘group’</td>
+<td>'group'</td>
 </tr>
 </tbody>
 </table>
-</div>
 
       </div>
       
