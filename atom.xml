@@ -6,7 +6,7 @@
   <link href="http://www.feacat.com/atom.xml" rel="self"/>
   
   <link href="http://www.feacat.com/"/>
-  <updated>2023-10-07T10:16:18.774Z</updated>
+  <updated>2023-10-09T01:59:32.489Z</updated>
   <id>http://www.feacat.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Beam188</title>
+    <link href="http://www.feacat.com/Beam188/"/>
+    <id>http://www.feacat.com/Beam188/</id>
+    <published>2023-10-08T10:00:00.000Z</published>
+    <updated>2023-10-09T01:59:32.489Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="introduction">Introduction</h3><p>This document shows some problems with element type<strong>Beam188</strong>.</p><h3 id="i-shaped-section-cantilever-beam">I-shaped section cantileverbeam</h3><p><img src="../images/Beam188.assets/1.png" style="zoom:100%;"></p><figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line"> <span class="comment">%% Creat points</span></span><br><span class="line">a=Point2D(<span class="string">'Point1'</span>);</span><br><span class="line">AddPoint(a,(<span class="number">0</span>:<span class="number">100</span>:<span class="number">2000</span>)',<span class="built_in">zeros</span>(<span class="number">21</span>,<span class="number">1</span>));</span><br><span class="line"><span class="comment">%% Creat lines</span></span><br><span class="line">b=Line2D(<span class="string">'Line1'</span>);</span><br><span class="line">AddCurve(b,a,<span class="number">1</span>);</span><br><span class="line">Plot(b);</span><br><span class="line">Meshoutput(b);</span><br><span class="line"><span class="comment">%% Add assembly</span></span><br><span class="line">Ass=Assembly(<span class="string">'I-shaped section beam'</span>);</span><br><span class="line">pos=[<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">-90</span>,<span class="number">0</span>,<span class="number">0</span>];</span><br><span class="line">AddPart(Ass,b.Meshoutput,pos);</span><br><span class="line"><span class="comment">% Boundary</span></span><br><span class="line">AddBoundary(Ass,<span class="number">1</span>,<span class="number">1</span>);</span><br><span class="line">Bound1=[<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>];</span><br><span class="line">SetBoundaryType(Ass,<span class="number">1</span>,Bound1);</span><br><span class="line"><span class="comment">%Material</span></span><br><span class="line">mat.<span class="built_in">table</span>=[<span class="string">"EX"</span>,<span class="number">2.1e5</span>;<span class="string">"PRXY"</span>,<span class="number">0.3</span>];</span><br><span class="line">AddMaterial(Ass,mat);</span><br><span class="line">SetMaterial(Ass,<span class="number">1</span>,<span class="number">1</span>);</span><br><span class="line"><span class="comment">%Add load</span></span><br><span class="line">AddLoad(Ass,<span class="number">1</span>,<span class="number">21</span>);</span><br><span class="line">Load1=[<span class="number">0</span>,<span class="number">-5e4</span>,<span class="number">-2e4</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>];</span><br><span class="line">SetLoad(Ass,<span class="number">1</span>,Load1);</span><br><span class="line"><span class="comment">%Element type</span></span><br><span class="line">ET.name=<span class="string">'188'</span>;</span><br><span class="line">ET.opt=[<span class="number">4</span>,<span class="number">2</span>];</span><br><span class="line">ET.R=[];</span><br><span class="line">AddET(Ass,ET);</span><br><span class="line">SetET(Ass,<span class="number">1</span>,<span class="number">1</span>);</span><br><span class="line"> <span class="comment">%Sec</span></span><br><span class="line">Sec.<span class="built_in">type</span>=<span class="string">"beam"</span>;</span><br><span class="line">Sec.subtype=<span class="string">"I"</span>;</span><br><span class="line">Sec.data=[<span class="number">200</span>,<span class="number">200</span>,<span class="number">300</span>,<span class="number">16</span>,<span class="number">16</span>,<span class="number">12</span>];</span><br><span class="line">AddSection(Ass,Sec);</span><br><span class="line">SetSection(Ass,<span class="number">1</span>,<span class="number">1</span>);</span><br><span class="line">BeamK(Ass,<span class="number">1</span>);</span><br><span class="line">Plot(Ass,<span class="string">'boundary'</span>,<span class="number">1</span>,<span class="string">'load'</span>,<span class="number">1</span>,<span class="string">'load_scale'</span>,<span class="number">0.1</span>);</span><br><span class="line"><span class="comment">%% Output to ANSYS</span></span><br><span class="line">ANSYS_Output(Ass);</span><br></pre></td></tr></table></figure><table style="border:none;text-align:center;width:auto;margin: 0 auto;"><tbody><tr><td style="padding: 6px"><img src="..\images\Beam188.assets\3.png" style="zoom: 100%;"></td><td><img src="..\images\Beam188.assets\2.png" style="zoom: 100%;"></td></tr></tbody></table><h3 id="reference">Reference</h3><p>[1] ANSYS结构分析单元与应用</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;introduction&quot;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;This document shows some problems with element type
+&lt;strong&gt;Beam188&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3 id=&quot;i-sh</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Beam54</title>
